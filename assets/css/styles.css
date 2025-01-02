@@ -27,22 +27,39 @@ header ul li{
     position: relative;
     text-align: center;
     z-index: 9;
+    transition: all .4s;
 }
+header ul li:hover,header ul li.active{
+  color: #1BABC3;
+}
+header ul li svg path{
+    transition: all .4s;
+}
+header ul li:hover svg path,header ul li.active svg path{
+    stroke: #1BABC3;
+  }
 header ul li::after{
     content: url('../img/Rectangle\ 4595.png');
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -39px;
+    bottom: -60px;
     margin-left: auto;
     margin-right: auto;
+    transition: all .4s;
+}
+header ul li:first-child::after{
+   right: -11px;
+}
+header ul li:hover::after,header ul li.active::after{
+    bottom: -39px;
 }
 header ul li::before{
     content: '';
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -29px;
+    bottom: -46px;
     margin-left: auto;
     margin-right: auto;
     width: 9px;
@@ -50,6 +67,32 @@ header ul li::before{
     border-radius: 50%;
     background-color: #1BABC3;
     z-index: 10;
+    transition: all .95s;
+}
+header ul li:hover::before,header ul li.active::before{
+    bottom: -27px;
+}
+header ul li a,header ul li > div{
+    position: relative;
+    text-align: center;
+}
+header ul li a:before,header ul li > div:before{
+    content: url('../img/Rectangle 4191 (2).png');
+    position: absolute;
+    left: 0;
+    right: -38px;
+    bottom: -73px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: all .4s;
+    opacity: 0;
+}
+header ul li:hover a:before,header ul li:hover > div:before,header ul li.active a:before,header ul li.active > div:before{
+   opacity: 100%;
+}
+header ul li:first-child a:before,header ul li:nth-child(3) a:before{
+    right: -48px;
 }
 footer ul li,footer .social a svg,footer .social a svg path{
   transition: all .4s;
