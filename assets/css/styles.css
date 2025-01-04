@@ -35,7 +35,7 @@ header ul li:hover,header ul li.active{
 header ul li svg path{
     transition: all .4s;
 }
-header ul li:hover svg path,header ul li.active svg path{
+header ul li:hover div svg path,header ul li.active div svg path{
     stroke: #1BABC3;
   }
 header ul li::after{
@@ -80,6 +80,18 @@ header ul li:hover::before,header ul li.active::before{
     opacity: 100%;
     visibility: visible;
 }
+header ul li:nth-child(2)::before{
+   display: none;
+}
+header ul li:nth-child(2) > svg{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+  }
+header ul li:nth-child(2):hover > svg{
+   opacity: 100%;
+   visibility: visible;
+ }
 header ul li a,header ul li > div{
     position: relative;
     text-align: center;
@@ -102,6 +114,15 @@ header ul li:hover a:before,header ul li:hover > div:before,header ul li.active 
 header ul li:first-child a:before,header ul li:nth-child(3) a:before{
     right: -48px;
 }
+/* dropdown */
+#dropdown{
+    margin-top: 40px !important;
+    transition: all .4s;
+}
+#dropdown.active{
+    margin-top: 0 !important;
+}
+/* footer */
 footer ul li,footer .social a svg,footer .social a svg path{
   transition: all .4s;
 }
@@ -197,6 +218,9 @@ background: linear-gradient(to right, #1BABC3 0%, #88E7F7 100%);
 .-top-28 {
     top: -28px;
 }
+.top-57{
+    top: 57px;
+}
 /* bottom */
 .-bottom-1 {
     bottom: -1px;
@@ -225,6 +249,9 @@ background: linear-gradient(to right, #1BABC3 0%, #88E7F7 100%);
     left: 0;
 }
 /* margin */
+.-mr-6{
+    margin-right: -6px;
+}
 .-mt-102{
     margin-top: -102px;
 }
@@ -372,6 +399,9 @@ box-sizing: border-box;
 .w-9 {
     width: 9%;
 }
+.w-10 {
+    width: 10px;
+}
 .w-30 {
     width: 30px;
 }
@@ -409,6 +439,9 @@ box-sizing: border-box;
     width: 467px;
 }
 /* height */
+.h-10{
+    height: 10px;
+}
 .h-34{
     height: 34px;
 }
@@ -463,17 +496,7 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 /* before && after */
-.circle-before{
-    position: relative;
-}
-.circle-before::before{
-    content: url('../img/svg/Ellipse\ 78.svg');
-    position: absolute;
-    top: 0;
-    right: -5px;
-    width: 10px;
-    height: 10px;
-}
+
 /* hover */
 .hover-1:hover{
     background: linear-gradient(157.164deg, rgba(136, 231, 247, 0%) 0%, rgba(112, 236, 255, 0.16) 100%);

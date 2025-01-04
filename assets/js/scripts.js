@@ -1,3 +1,14 @@
+// openDropdown
+
+let dropdown = document.getElementById('dropdown');
+let openDropdown = document.getElementById('openDropdown');
+
+openDropdown.addEventListener('mouseenter' , function () {
+  dropdown.classList.add('active');
+})
+openDropdown.addEventListener('mouseleave' , function () {
+  dropdown.classList.remove('active');
+})
 // swiper
 
 var services = new Swiper(".services", {

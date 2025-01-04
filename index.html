@@ -28,7 +28,7 @@
           <a><img alt="logo" src="assets/img/logo.png" class="w-xs-50"></a>
           <ul class="list-unstyled m-0 p-0 fs-20 fw-bold text-white d-xl-flex d-none align-items-center gap-5">
             <li class="active"><a>اصلی</a></li>
-            <li>
+            <li id="openDropdown" class="position-relative DropdownArea">
               <div class="position-relative">
                 <div class="d-flex align-items-center gap-2">
                   <p class="mb-0">خدمات</p>
@@ -37,6 +37,9 @@
                   </svg>
                 </div>
               </div>
+              <svg class="position-absolute end-0 start-0 top-57 w-auto mx-auto d-block" xmlns="http://www.w3.org/2000/svg" width="33" height="9" viewBox="0 0 33 9" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.8066 8.5H0.193359C4.85352 8.18393 9.22656 6.06978 12.375 2.57672C14.5801 0.129671 18.4199 0.129671 20.625 2.57672C23.7734 6.06978 28.1465 8.18393 32.8066 8.5Z" fill="#203642"></path>
+            </svg>
             </li>
             <li><a>درباره ما</a></li>
             <li><a>تماس با ما</a></li>
@@ -78,29 +81,85 @@
         </div>
       </div>
       <!-- dropdown -->
-      <div class="position-absolute mx-auto end-0 start-0 w-79 z-10">
-        <div class="rounded-20 bg-main4 text-end p-4 row mx-0 mt-3">
-          <div class="col-4">
+      <div id="dropdown" class="position-absolute mx-auto end-0 start-0 top-0 w-79 z-10 DropdownArea pt-5">
+        <div class="rounded-20 bg-main4 text-end p-4 row mx-0 mt-2 position-relative">
+          <div class="col-4 px-0">
            <div class="d-flex align-items-center gap-4">
             <div>
               <h4 class="fs-20 text-white font-bold">خرید هاست</h4>
-              <div class="fs-18 fw-bold text-white m-0 p-0 d-flex flex-column gap-4 border-r-solid mt-4">
-                <div class="circle-before pe-3">
+              <div class="fs-18 fw-bold text-white m-0 p-0 d-flex flex-column mt-4 border-r-solid">
+                <div class="d-flex align-items-center gap-3 pb-2 -mr-6">
+                  <div class="w-10 h-10 rounded-circle bg-main flex-shrink-0"></div>
                   <a>هاست ووکامرس</a>
                 </div>
-                <div class="circle-before pe-3">
+                <div class="d-flex align-items-center gap-3 pb-2 -mr-6">
+                  <div class="w-10 h-10 rounded-circle bg-main flex-shrink-0"></div>
                   <a>هاست وردپرس</a>
                 </div>
-                <div class="circle-before pe-3">
+                <div class="d-flex align-items-center gap-3 pb-2 -mr-6">
+                  <div class="w-10 h-10 rounded-circle bg-main flex-shrink-0"></div>
                   <a>هاست ویندوز</a>
                 </div>
-                <div class="circle-before pe-3">
+                <div class="d-flex align-items-center gap-3 pb-2 -mr-6">
+                  <div class="w-10 h-10 rounded-circle bg-main flex-shrink-0"></div>
                   <a>هاست ابری</a>
                 </div>
               </div>
             </div>
             <div class="flex-shrink-0">
               <img alt="img" src="assets/img/Cloud Server.png" class="img-fluid w-100">
+            </div>
+           </div>
+          </div>
+          <div class="col-4 px-0">
+           <div class="d-flex align-items-center gap-4">
+            <div>
+              <h4 class="fs-20 text-white font-bold">ثبت دامنه</h4>
+              <div class="fs-18 fw-bold text-white m-0 p-0 d-flex flex-column mt-4 border-r-solid">
+                <div class="d-flex align-items-center gap-3 pb-2 -mr-6">
+                  <div class="w-10 h-10 rounded-circle bg-main flex-shrink-0"></div>
+                  <a>.com</a>
+                </div>
+                <div class="d-flex align-items-center gap-3 pb-2 -mr-6">
+                  <div class="w-10 h-10 rounded-circle bg-main flex-shrink-0"></div>
+                  <a>.ir</a>
+                </div>
+                <div class="d-flex align-items-center gap-3 pb-2 -mr-6">
+                  <div class="w-10 h-10 rounded-circle bg-main flex-shrink-0"></div>
+                  <a>.org</a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0">
+              <img alt="img" src="assets/img/Node Tree.png" class="img-fluid w-100">
+            </div>
+           </div>
+          </div>
+          <div class="col-4 px-0">
+           <div class="d-flex align-items-center gap-4">
+            <div>
+              <h4 class="fs-20 text-white font-bold">ثبت سرور</h4>
+              <div class="fs-18 fw-bold text-white m-0 p-0 d-flex flex-column mt-4 border-r-solid">
+                <div class="d-flex align-items-center gap-3 pb-2 -mr-6">
+                  <div class="w-10 h-10 rounded-circle bg-main flex-shrink-0"></div>
+                  <a>سرور مجازی</a>
+                </div>
+                <div class="d-flex align-items-center gap-3 pb-2 -mr-6">
+                  <div class="w-10 h-10 rounded-circle bg-main flex-shrink-0"></div>
+                  <a>سرور ابری</a>
+                </div>
+                <div class="d-flex align-items-center gap-3 pb-2 -mr-6">
+                  <div class="w-10 h-10 rounded-circle bg-main flex-shrink-0"></div>
+                  <a>سرور کولیشن</a>
+                </div>
+                <div class="d-flex align-items-center gap-3 pb-2 -mr-6">
+                  <div class="w-10 h-10 rounded-circle bg-main flex-shrink-0"></div>
+                  <a>سرور اختصاصی</a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0">
+              <img alt="img" src="assets/img/Cloud Upload.png" class="img-fluid w-100">
             </div>
            </div>
           </div>
