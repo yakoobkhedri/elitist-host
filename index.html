@@ -14,22 +14,47 @@
 
 <body>
 
+  <!-- mobile menu -->
+  <div class="offcanvas offcanvas-end w-100 d-xl-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <a><img alt="logo" src="assets/img/logo.png" class="w-xs-50"></a>
+      <svg data-bs-dismiss="offcanvas" aria-label="Close" class="cursor" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.5" y="0.5" width="39" height="39" rx="9.5" fill="url(#paint0_linear_447_409)"/>
+        <rect x="0.5" y="0.5" width="39" height="39" rx="9.5" stroke="url(#paint1_linear_447_409)"/>
+        <path d="M13 20L12.2929 19.2929L11.5858 20L12.2929 20.7071L13 20ZM25 21C25.5523 21 26 20.5523 26 20C26 19.4477 25.5523 19 25 19V21ZM16.2929 15.2929L12.2929 19.2929L13.7071 20.7071L17.7071 16.7071L16.2929 15.2929ZM12.2929 20.7071L16.2929 24.7071L17.7071 23.2929L13.7071 19.2929L12.2929 20.7071ZM13 21H25V19H13V21Z" fill="#ECFFFF"/>
+        <defs>
+        <linearGradient id="paint0_linear_447_409" x1="39.0435" y1="-4.66207e-05" x2="1.377" y2="0.109383" gradientUnits="userSpaceOnUse">
+        <stop stop-color="white" stop-opacity="0.15"/>
+        <stop offset="1" stop-color="#2C2138" stop-opacity="0.1"/>
+        </linearGradient>
+        <linearGradient id="paint1_linear_447_409" x1="39.0435" y1="-4.66207e-05" x2="1.377" y2="0.109383" gradientUnits="userSpaceOnUse">
+        <stop stop-color="white" stop-opacity="0.15"/>
+        <stop offset="1" stop-color="#2C2138" stop-opacity="0.27"/>
+        </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="offcanvas-body">
+      ...
+    </div>
+  </div>
+
   <!-- shape -->
   <img alt="shape" src="assets/img/Rectangle 4192.png" class="position-absolute start-0 d-none d-sm-block">
   <!--  -->
 
   <header class="mt-4 position-relative">
-    <div class="container">
-      <div class="rounded-pill  px-sm-5 px-3 py-1 bg-gradient1 d-flex align-items-center justify-content-between gap-3">
-        <div class="cursor d-xl-none">
+    <div class="container h-85">
+      <div class="rounded-pill h-100 overflow-hidden  px-sm-5 px-3 py-1 bg-gradient1 d-flex align-items-center justify-content-between gap-3">
+        <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" class="cursor d-xl-none">
           <img alt="icon" src="assets/img/svg/menu-alt-1_svgrepo.com.svg">
         </div>
-        <div class="d-flex align-items-center gap-5">
+        <div class="d-flex align-items-center gap-5 h-100">
           <a><img alt="logo" src="assets/img/logo.png" class="w-xs-50"></a>
-          <ul class="list-unstyled m-0 p-0 fs-20 fw-bold text-white d-xl-flex d-none align-items-center gap-5">
-            <li class="active"><a>اصلی</a></li>
-            <li id="openDropdown" class="position-relative DropdownArea">
-              <div class="position-relative">
+          <ul class="list-unstyled m-0 h-100 p-0 fs-20 fw-bold text-white d-xl-flex d-none align-items-center gap-5">
+            <li class="h-100 d-flex align-items-center justify-content-center active"><a class="text-white h-100 d-flex align-items-center justify-content-center">اصلی</a></li>
+            <li id="openDropdown" class="position-relative d-flex align-items-center justify-content-center DropdownArea h-100">
+              <div class="position-relative cursor h-100 d-flex align-items-center justify-content-center DropdownArea">
                 <div class="d-flex align-items-center gap-2">
                   <p class="mb-0">خدمات</p>
                   <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,12 +62,12 @@
                   </svg>
                 </div>
               </div>
-              <svg class="position-absolute end-0 start-0 top-57 w-auto mx-auto d-block" xmlns="http://www.w3.org/2000/svg" width="33" height="9" viewBox="0 0 33 9" fill="white">
+              <svg class="position-absolute end-0 start-0 top-72 z-99 w-auto mx-auto d-block DropdownArea" xmlns="http://www.w3.org/2000/svg" width="33" height="9" viewBox="0 0 33 9" fill="white">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M32.8066 8.5H0.193359C4.85352 8.18393 9.22656 6.06978 12.375 2.57672C14.5801 0.129671 18.4199 0.129671 20.625 2.57672C23.7734 6.06978 28.1465 8.18393 32.8066 8.5Z" fill="#203642"></path>
             </svg>
             </li>
-            <li><a>درباره ما</a></li>
-            <li><a>تماس با ما</a></li>
+            <li class="h-100 d-flex align-items-center justify-content-center"><a class="text-white h-100 d-flex align-items-center justify-content-center">درباره ما</a></li>
+            <li class="h-100 d-flex align-items-center justify-content-center"><a class="text-white h-100 d-flex align-items-center justify-content-center">تماس با ما</a></li>
           </ul>
         </div>
         <div class="d-flex align-items-center gap-4">
@@ -81,8 +106,8 @@
         </div>
       </div>
       <!-- dropdown -->
-      <div id="dropdown" class="position-absolute mx-auto end-0 start-0 top-0 w-79 z-10 DropdownArea pt-5">
-        <div class="rounded-20 bg-main4 text-end p-4 row mx-0 mt-2 position-relative">
+      <div id="dropdown" class="position-absolute mx-auto end-0 start-0 top-0 w-79 z-10 DropdownArea">
+        <div class="rounded-20 bg-main4 text-end p-4 row mx-0 position-relative">
           <div class="col-4 px-0">
            <div class="d-flex align-items-center gap-4">
             <div>
@@ -107,7 +132,7 @@
               </div>
             </div>
             <div class="flex-shrink-0">
-              <img alt="img" src="assets/img/Cloud Server.png" class="img-fluid w-100">
+              <img alt="img" src="assets/img/Cloud Server.png" class="img-fluid w-128">
             </div>
            </div>
           </div>
@@ -131,7 +156,7 @@
               </div>
             </div>
             <div class="flex-shrink-0">
-              <img alt="img" src="assets/img/Node Tree.png" class="img-fluid w-100">
+              <img alt="img" src="assets/img/Node Tree.png" class="img-fluid w-128">
             </div>
            </div>
           </div>
@@ -159,7 +184,7 @@
               </div>
             </div>
             <div class="flex-shrink-0">
-              <img alt="img" src="assets/img/Cloud Upload.png" class="img-fluid w-100">
+              <img alt="img" src="assets/img/Cloud Upload.png" class="img-fluid w-128">
             </div>
            </div>
           </div>

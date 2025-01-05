@@ -6,9 +6,14 @@ let openDropdown = document.getElementById('openDropdown');
 openDropdown.addEventListener('mouseenter' , function () {
   dropdown.classList.add('active');
 })
-openDropdown.addEventListener('mouseleave' , function () {
-  dropdown.classList.remove('active');
-})
+// openDropdown.addEventListener('mouseleave' , function () {
+//   dropdown.classList.remove('active');
+// })
+// document.addEventListener('mousemove', (event) => {
+//   if (!event.target.closest('.dropdownArea')) {
+//     dropdown.classList.remove('active');
+//   }
+// })
 // swiper
 
 var services = new Swiper(".services", {

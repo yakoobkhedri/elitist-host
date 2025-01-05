@@ -17,7 +17,9 @@ html {
     scroll-behavior: smooth;
     direction: rtl;
 }
-
+.offcanvas-end{
+    background-color: #1f2731;
+}
 body {
     font-family: "yekanBakh-Regular";
     user-select: none;
@@ -29,10 +31,10 @@ header ul li{
     z-index: 9;
     transition: all .4s;
 }
-header ul li:hover,header ul li.active{
-  color: #1BABC3;
+header ul li:hover a,header ul li.active a,header ul li:hover > div,header ul li.active > div{
+  color: #1BABC3 !important;
 }
-header ul li svg path{
+header ul li svg path,header ul li > div{
     transition: all .4s;
 }
 header ul li:hover div svg path,header ul li.active div svg path{
@@ -54,7 +56,7 @@ header ul li:first-child::after{
    right: -11px;
 }
 header ul li:hover::after,header ul li.active::after{
-    bottom: -39px;
+    bottom: -15px;
     opacity: 100%;
     visibility: visible;
 }
@@ -65,7 +67,7 @@ header ul li::before{
     right: 0;
     bottom: -46px;
     opacity: 0;
-    visibility: hidden;
+    visibility: hidden !important;
     margin-left: auto;
     margin-right: auto;
     width: 9px;
@@ -76,9 +78,9 @@ header ul li::before{
     transition: all .95s;
 }
 header ul li:hover::before,header ul li.active::before{
-    bottom: -27px;
+    bottom: -4px;
     opacity: 100%;
-    visibility: visible;
+    visibility: visible !important;
 }
 header ul li:nth-child(2)::before{
    display: none;
@@ -115,12 +117,19 @@ header ul li:first-child a:before,header ul li:nth-child(3) a:before{
     right: -48px;
 }
 /* dropdown */
+#dropdown a:hover{
+    color: #1babc3;
+}
 #dropdown{
-    margin-top: 40px !important;
+    margin-top: 115px !important;
     transition: all .4s;
+    opacity: 0;
+    visibility: hidden;
 }
 #dropdown.active{
-    margin-top: 0 !important;
+    margin-top: 85px !important;
+    visibility: visible;
+    opacity: 100%;
 }
 /* footer */
 footer ul li,footer .social a svg,footer .social a svg path{
@@ -179,6 +188,9 @@ a {
 .z-20 {
     z-index: 20;
 }
+.z-99 {
+    z-index: 99;
+}
 /* color */
 .text-main {
     color: #1BABC3;
@@ -218,8 +230,8 @@ background: linear-gradient(to right, #1BABC3 0%, #88E7F7 100%);
 .-top-28 {
     top: -28px;
 }
-.top-57{
-    top: 57px;
+.top-72{
+    top: 72px;
 }
 /* bottom */
 .-bottom-1 {
@@ -432,6 +444,9 @@ box-sizing: border-box;
 .w-125 {
     width: 125px;
 }
+.w-128 {
+    width: 128px;
+}
 .w-310 {
     width: 310px;
 }
@@ -456,6 +471,9 @@ box-sizing: border-box;
 }
 .h-84{
     height: 84px;
+}
+.h-85{
+    height: 85px;
 }
 .h-143{
     height: 143px;
