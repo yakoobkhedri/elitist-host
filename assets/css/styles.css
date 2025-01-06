@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "yekanBakh-Regular";
-    src: url('../fonts/IRANYekanXFaNum-Regular.woff') format("woff");
+    font-family: "yekan-Regular";
+    src: url('../fonts/IRANYekanX-Regular.woff') format("woff");
 }
 
 @font-face {
-    font-family: "yekanBakh-Bold";
-    src: url('../fonts/IRANYekanXFaNum-Bold.woff') format("woff");
+    font-family: "yekan-Bold";
+    src: url('../fonts/IRANYekanX-Bold.woff') format("woff");
 }
 
 /* navigation */
@@ -18,12 +18,38 @@ html {
     direction: rtl;
 }
 .offcanvas-end{
-    background-color: #1f2731;
+    background: url('../img/Capture.PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 body {
-    font-family: "yekanBakh-Regular";
+    font-family: "yekan-Regular";
     user-select: none;
     background-color: #1f2731;
+    overflow-x: hidden;
+}
+#mobileNav li a,#mobileNav li a > svg path{
+  transition: all .4s;
+}
+#mobileNav > li:hover > a{
+    background: linear-gradient(-90.166deg, rgba(255, 255, 255, 3%) 0%, rgba(44, 33, 56, 10%) 100%);
+}
+#mobileNav > li:hover > a{
+  color: #1BABC3 !important;
+}
+#mobileNav > li:hover a > svg path{
+  stroke: #1BABC3;
+}
+.accordionContent ul > li:before{
+    content: '';
+    position: absolute;
+    width:7px;
+    height:7px;
+    background: rgb(27, 171, 195);
+    transition: all .4s;
+    border-radius: 50%;
+    right: -4.3px;
 }
 header ul li{
     position: relative;
@@ -94,11 +120,11 @@ header ul li:nth-child(2):hover > svg{
    opacity: 100%;
    visibility: visible;
  }
-header ul li a,header ul li > div{
+header ul li a,header ul li > div,#mobileNav li a{
     position: relative;
     text-align: center;
 }
-header ul li a:before,header ul li > div:before{
+header ul li a:before,header ul li > div:before,#mobileNav li a::before{
     content: url('../img/Rectangle 4191 (2).png');
     position: absolute;
     left: 0;
@@ -145,7 +171,7 @@ footer .social a:hover svg{
     transform: translateY(-7px);
 }
 .font-bold {
-    font-family: "yekanBakh-Bold";
+    font-family: "yekan-Bold";
 }
 
 a {
@@ -326,7 +352,9 @@ background: linear-gradient(to right, #1BABC3 0%, #88E7F7 100%);
 .fs-12 {
     font-size: 12px;
 }
-
+.fs-13 {
+    font-size: 13px;
+}
 .fs-14 {
     font-size: 14px;
 }
@@ -513,8 +541,15 @@ box-sizing: border-box;
 input[type="number"] {
     -moz-appearance: textfield;
 }
-/* before && after */
-
+/* accordion */
+.accordionContent{
+    max-height: 0;
+    overflow: hidden;
+    transition: all .4s;
+}
+.accordionContent.active{
+    max-height: 2000px;
+}
 /* hover */
 .hover-1:hover{
     background: linear-gradient(157.164deg, rgba(136, 231, 247, 0%) 0%, rgba(112, 236, 255, 0.16) 100%);
