@@ -153,7 +153,7 @@ header ul li:first-child a:before,header ul li:nth-child(3) a:before{
     visibility: hidden;
 }
 #dropdown.active{
-    margin-top: 85px !important;
+    margin-top: -9px !important;
     visibility: visible;
     opacity: 100%;
 }
@@ -244,6 +244,9 @@ background: linear-gradient(to right, #1BABC3 0%, #88E7F7 100%);
     box-shadow: 0px -5px 22px -17px #f1f1f1;
 }
 /* top */
+.-top-8 {
+    top: -8px;
+}
 .top-9 {
     top: 9px;
 }
@@ -269,6 +272,9 @@ background: linear-gradient(to right, #1BABC3 0%, #88E7F7 100%);
 }
 .right-81 {
     right: 81px;
+}
+.right-21-8{
+    right: 21.8%;
 }
 .right-0 {
     right: 0;
