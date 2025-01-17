@@ -615,7 +615,11 @@ input[type="number"] {
     transform: translateZ(40px);
     opacity: 0.85;
   }
-@media only screen and (max-width:1400px) {}
+@media only screen and (max-width:1400px) {
+    .right-xl-25-3{
+        right: 25.3%;
+    }
+}
 
 @media only screen and (max-width:1200px) {
     .w-xl-89{
