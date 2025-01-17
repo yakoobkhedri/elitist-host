@@ -6,14 +6,12 @@ let openDropdown = document.getElementById('openDropdown');
 openDropdown.addEventListener('mouseenter' , function () {
   dropdown.classList.add('active');
 })
-// openDropdown.addEventListener('mouseleave' , function () {
-//   dropdown.classList.remove('active');
-// })
-// document.addEventListener('mousemove', (event) => {
-//   if (!event.target.closest('.dropdownArea')) {
-//     dropdown.classList.remove('active');
-//   }
-// })
+openDropdown.addEventListener('mouseleave' , function () {
+  dropdown.classList.remove('active');
+})
+
+
+
 // swiper
 
 var services = new Swiper(".services", {
@@ -72,6 +70,21 @@ var testimonial = new Swiper(".testimonial", {
   autoplay: true,
 });
 
+// accordion
+
+let accordionBtn = Array.from(document.getElementsByClassName('accordionBtn'));
+let accordionBtn2 = Array.from(document.getElementsByClassName('accordionBtn2'));
+
+accordionBtn.forEach(item => {
+  item.addEventListener('click' , function () {
+    item.nextElementSibling.classList.toggle('active');
+  })
+});
+accordionBtn2.forEach(item => {
+  item.addEventListener('click' , function () {
+    item.nextElementSibling.classList.toggle('active');
+  })
+});
 // datapicker
 
 jalaliDatepicker.startWatch();
