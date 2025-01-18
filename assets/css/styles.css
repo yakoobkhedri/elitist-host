@@ -17,7 +17,7 @@
     bottom: 13px;
     width: 338px;
     height: 82px;
-    background: linear-gradient(90deg, rgba(127, 208, 252, 10%) 0%, rgba(213, 229, 255, 21%) 100%);
+    background: #414c5a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,13 @@
     list-style: none;
     z-index: 1;
 }
-
+.navigation ul li p {
+    opacity: 0;
+    transition: all .4s;
+}
+.navigation ul li.active p {
+    opacity: 1;
+}
 .navigation ul li a {
     position: relative;
     display: flex;
@@ -61,11 +67,8 @@
     transition: .5s;
 }
 
-.navigation ul li.active a .icon {
-    transform: translateY(-38px);
-}
 .navigation ul li.active a .icon svg circle,.navigation ul li.active a .icon svg path {
-   stroke: white;
+   stroke: #1BABC3;
 }
 .navigation ul li a .text {
     position: absolute;
@@ -132,11 +135,11 @@
 }
 
 .navigation ul li:nth-child(2).active~.indicator {
-    transform: translateX(calc(-98px * 1)) rotate(-180deg);
+    transform: translateX(calc(-67px * 1)) rotate(-180deg);
 }
 
 .navigation ul li:nth-child(3).active~.indicator {
-    transform: translateX(calc(-98px * 2)) rotate(-180deg);
+    transform: translateX(calc(-69px * 2)) rotate(-180deg);
 }
 
 .navigation ul li:nth-child(4).active~.indicator {
@@ -266,6 +269,7 @@ header ul li a:before,header ul li > div:before,#mobileNav li a::before{
     display: block;
     transition: all .4s;
     opacity: 0;
+    z-index: -1;
 }
 header ul li:hover a:before,header ul li:hover > div:before,header ul li.active a:before,header ul li.active > div:before{
    opacity: 100%;
@@ -389,6 +393,9 @@ background: linear-gradient(to right, #1BABC3 0%, #88E7F7 100%);
 }
 .-top-28 {
     top: -28px;
+}
+.-top-45 {
+    top: -45px;
 }
 .top-72{
     top: 72px;
@@ -667,7 +674,6 @@ box-sizing: border-box;
 .resize-none {
     resize: none;
 }
-
 .cursor-pointer {
     cursor: pointer;
 }
