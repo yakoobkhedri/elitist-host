@@ -147,7 +147,7 @@
     </div>
   </div>
 
-  <header class="mt-4 position-relative">
+  <header class="mt-4 position-relative z-10">
     <div class="container h-85">
       <div
         class="rounded-pill h-100 overflow-hidden px-sm-5 px-3 bg-gradient1 d-flex align-items-center justify-content-between gap-3">
@@ -213,15 +213,16 @@
         </div>
       </div>
       <!-- dropdown -->
-      <div id="dropdown" class="position-absolute d-none d-xl-block mx-auto end-0 start-0 w-100 z-10 DropdownArea">
+      <div id="dropdown" class="position-absolute d-none d-xl-block mx-auto end-0 start-0 w-100 z-99 DropdownArea">
         <div class="container pt-5">
           <div class="rounded-20 bg-main4 text-end p-4 row mx-0 position-relative">
-            <svg class="position-absolute d-none d-xl-block -top-8 z-99 w-auto right-21-8 right-xl-25-3 d-block DropdownArea"
-                xmlns="http://www.w3.org/2000/svg" width="33" height="9" viewBox="0 0 33 9" fill="white">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M32.8066 8.5H0.193359C4.85352 8.18393 9.22656 6.06978 12.375 2.57672C14.5801 0.129671 18.4199 0.129671 20.625 2.57672C23.7734 6.06978 28.1465 8.18393 32.8066 8.5Z"
-                  fill="#203642"></path>
-              </svg>
+            <svg
+              class="position-absolute d-none d-xl-block -top-8 z-99 w-auto right-21-8 right-xl-25-3 d-block DropdownArea"
+              xmlns="http://www.w3.org/2000/svg" width="33" height="9" viewBox="0 0 33 9" fill="white">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M32.8066 8.5H0.193359C4.85352 8.18393 9.22656 6.06978 12.375 2.57672C14.5801 0.129671 18.4199 0.129671 20.625 2.57672C23.7734 6.06978 28.1465 8.18393 32.8066 8.5Z"
+                fill="#203642"></path>
+            </svg>
             <div class="col-4 px-0">
               <div class="d-flex align-items-center gap-4">
                 <div>
@@ -313,9 +314,32 @@
 
 
     <!-- banner -->
-    <section class="py-5 my-5 mt-0 mt-lg-5">
-      <div class="container">
-        
+    <section class="py-5" id="banner">
+      <div class="container pt-5 mt-5">
+        <div class="max-w-602 mx-auto pt-5 mt-5 position-relative">
+          <img alt="img" src="assets/img/domain.png" class="d-block mx-auto mt-5" data-aos="fade-down">
+          <p class="text-white fs-20 mt-4" data-aos="fade-up">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+            و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله ..</p>
+          <div data-aos="fade-down" class="d-flex align-items-center justify-content-center gap-3 mt-4">
+            <a
+              class="d-flex align-items-center justify-content-center btnHover px-4 py-3 gap-2 rounded-pill bg-main text-white font-bold">
+              <p class="mb-0">جستجو دامنه</p>
+              <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.5 6.24999C17.9142 6.24999 18.25 6.58579 18.25 6.99999C18.25 7.41419 17.9142 7.74999 17.5 7.74999H8.25V13C8.25 13.3034 8.0673 13.5768 7.787 13.6929C7.5068 13.809 7.18417 13.7449 6.96967 13.5304L0.96967 7.53039C0.82902 7.38969 0.75 7.19889 0.75 6.99999C0.75 6.80109 0.82902 6.61029 0.96967 6.46969L6.96967 0.469675C7.18417 0.255175 7.5068 0.191015 7.787 0.307095C8.0673 0.423185 8.25 0.696665 8.25 1.00001V6.24999H17.5Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <div
+              class="h-56 w-56 d-flex align-items-center justify-content-center rounded-circle bg-main btnHover cursor">
+              <svg width="24" height="24" viewBox="0 0 24 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M14.1702 25.425C14.0555 25.425 13.967 25.3311 13.967 25.2189C13.967 25.1043 14.0555 25.013 14.1702 25.013H16.867C16.9818 25.013 17.0705 25.1043 17.0705 25.2189C17.0705 25.3311 16.9818 25.425 16.867 25.425H14.1702ZM14.1702 27.115C14.0555 27.115 13.967 27.0237 13.967 26.9089C13.967 26.7942 14.0555 26.703 14.1702 26.703H16.867C16.9818 26.703 17.0705 26.7942 17.0705 26.9089C17.0705 27.0237 16.9818 27.115 16.867 27.115H14.1702ZM19.8245 19.8178C19.0213 19.3902 18.0667 18.8764 16.9503 18.2426L13.9876 23.117C13.9772 23.1327 13.9669 23.1456 13.9565 23.1614C13.8783 23.2448 13.7479 23.25 13.6643 23.1718L12.11 21.7217L10.3888 23.4326V23.4351H10.3835V23.4378L10.3784 23.4404V23.443V23.4456H10.3733V23.4481L10.3679 23.4508V23.4533L10.3628 23.456L10.3574 23.4585L10.3418 23.4664L10.3367 23.469L10.3314 23.4716L10.3263 23.4741L10.3212 23.4767L10.3158 23.4794L10.3106 23.482H10.3052L10.3001 23.4846H10.295L10.2897 23.4871H10.2846H10.2793L10.2742 23.4898H10.2691H10.2637H10.2586H10.2532H10.2429H10.2376H10.2325H10.2272H10.2221H10.2167L10.2116 23.4871H10.2065H10.2011L10.196 23.4846H10.1906L10.1855 23.482H10.1804L10.17 23.4767L10.1595 23.4716L10.1544 23.469L10.1491 23.4664L10.144 23.4637L10.1335 23.4585V23.456H10.1284L10.1231 23.4481H10.118V23.4456V23.443H10.1126V23.4404V23.4378H10.1075V23.4351H10.1024V23.4326V23.4299H10.097V23.4273V23.4246H10.0919V23.4221V23.4194L10.0866 23.4169L10.0815 23.4117V23.4091L10.0764 23.396L10.0711 23.3934L10.066 23.383L10.0606 23.3752L7.25444 18.2479C6.10711 18.8999 5.13159 19.4189 4.32328 19.8493C2.44544 20.8533 1.46475 21.3749 0.984992 22.1546C0.463465 23.0048 0.479039 24.2358 0.515639 26.7994C0.526045 27.527 0.536522 28.3563 0.536522 29.2092C4.39619 30.0907 8.2507 30.5209 12.1055 30.5157C15.9601 30.5105 19.8145 30.0672 23.6745 29.2092C23.6745 28.3877 23.6847 27.5765 23.6952 26.862C23.7266 24.2722 23.7422 23.0283 23.2154 22.1676C22.7245 21.3722 21.7333 20.8401 19.8245 19.8178ZM12.3813 21.4088L13.7582 22.6971L16.6114 18.0001L15.5735 17.0483L12.3813 21.4088ZM7.59318 18.0054L10.295 22.9475L11.8337 21.4141L8.63623 17.0484L7.59318 18.0054ZM12.2093 2.01072C10.66 2.01072 9.25177 2.63935 8.23456 3.65643C7.41577 4.47528 6.85234 5.5446 6.65936 6.73639C6.66976 6.76513 6.67493 6.79897 6.66976 6.83026C6.64888 6.96059 6.63323 7.09361 6.62814 7.22663C6.61766 7.3571 6.61249 7.49274 6.61249 7.63093C6.61249 7.93342 6.63323 8.2568 6.67486 8.59583V8.60368C6.71677 8.94278 6.77942 9.29738 6.85765 9.65212C6.86274 9.67038 6.86798 9.69382 6.86798 9.71463C6.86798 9.73296 6.86281 9.74854 6.86281 9.7668C7.16014 11.0525 7.70772 12.4296 8.48516 13.5562C9.41339 14.9019 10.6652 15.8799 12.2093 15.8799C13.7531 15.8799 15.01 14.9019 15.9385 13.5562C16.0377 13.4101 16.1367 13.2589 16.2308 13.105L13.1012 14.2943C12.9394 14.3542 12.7724 14.3464 12.6265 14.2812C12.4856 14.2159 12.3603 14.096 12.3031 13.9369C12.2405 13.7778 12.251 13.6083 12.3188 13.4649C12.3814 13.3189 12.5013 13.1989 12.6577 13.1389L17.0287 11.475C17.5554 10.1319 17.8321 8.72368 17.8321 7.631C17.8321 6.07923 17.201 4.6735 16.1838 3.65643C15.1666 2.63928 13.7634 2.01072 12.2093 2.01072ZM7.74963 6.29302C7.69746 6.19391 7.73915 6.06875 7.83812 6.01658C7.93723 5.9644 8.06253 6.00617 8.11471 6.10521C8.22408 6.3139 8.35448 6.49386 8.50067 6.64769C8.94397 7.11973 9.5491 7.35441 10.1644 7.41182C10.78 7.46923 11.4111 7.34662 11.8858 7.10147C12.0578 7.01277 12.2144 6.90842 12.3341 6.7885L12.3395 6.78581C13.4191 5.76349 13.8207 5.5732 13.993 5.75309L14.0033 5.76349C14.1079 5.88603 14.0763 6.06344 14.0347 6.26937C14.0033 6.42066 13.9669 6.59544 13.9981 6.67891V6.68415C14.0241 6.72584 14.1285 6.7233 14.4101 6.61888C14.7962 6.47283 15.3647 6.29805 15.8757 6.27461H15.8811C16.4548 6.25373 16.9555 6.41542 17.1171 6.99181C17.1486 7.10133 17.0808 7.21346 16.9711 7.24475C16.8617 7.27342 16.7469 7.20829 16.7209 7.1014C16.6268 6.76499 16.2879 6.67112 15.8966 6.6867H15.8915C15.4375 6.70758 14.9108 6.86934 14.5561 7.00229C13.977 7.21608 13.7217 7.09354 13.6174 6.8406L13.612 6.81972C13.5392 6.62935 13.586 6.39199 13.6277 6.1886C13.6486 6.08949 13.7268 6.06861 13.6957 6.03732C13.6852 6.02422 13.4711 6.28247 12.6212 7.08575V7.08837C12.4645 7.23442 12.2819 7.35965 12.0733 7.46647C11.5308 7.74816 10.8215 7.88642 10.1279 7.82122C9.41849 7.75594 8.71963 7.47957 8.19782 6.93185C8.026 6.75204 7.87465 6.53817 7.74963 6.29302ZM13.7582 9.78507C13.6539 9.82938 13.5339 9.7799 13.4869 9.67555C13.4453 9.5712 13.4923 9.45128 13.5966 9.40689C13.6017 9.40427 14.8746 8.83319 15.4899 9.45128C15.5681 9.52951 15.5681 9.66245 15.4899 9.7433C15.4065 9.82153 15.2761 9.82153 15.198 9.74068C14.7858 9.32867 13.7634 9.78507 13.7582 9.78507ZM5.27197 7.0076C5.50664 5.04644 6.34129 3.30693 7.55658 2.05248C8.79254 0.77461 10.4254 0 12.2092 0C13.9982 0 15.6307 0.77461 16.8669 2.05248C18.0822 3.30693 18.9169 5.04644 19.1515 7.0076H19.694V9.50869H18.0561C18.1917 8.83574 18.2596 8.19429 18.2596 7.631C18.2596 7.4223 18.2542 7.21367 18.2283 7.00767H18.7395C18.5048 5.15857 17.7173 3.52086 16.5697 2.33941C15.4065 1.13976 13.8834 0.412153 12.2092 0.412153C10.5401 0.412153 9.01165 1.13976 7.85384 2.33941C6.70629 3.52079 5.91356 5.15857 5.68398 7.00767H6.18993C6.16898 7.21367 6.15871 7.4223 6.15871 7.631C6.15871 8.19429 6.22653 8.83581 6.36734 9.50869H4.7607V7.0076H5.27197ZM18.656 10.5779C18.656 10.4631 18.7501 10.3692 18.8648 10.3692C18.9794 10.3692 19.0681 10.4631 19.0681 10.5779V11.4386C19.0681 11.5324 19.0055 11.6107 18.9221 11.6367L12.9549 13.9082C12.8455 13.9499 12.7307 13.8952 12.689 13.7909C12.6473 13.684 12.6994 13.564 12.809 13.5249L18.6559 11.2977V10.5779H18.656ZM10.827 9.40689C10.9313 9.45128 10.9781 9.57127 10.9313 9.67555C10.8896 9.7799 10.7695 9.82938 10.6652 9.78507C10.6601 9.78507 9.63781 9.32867 9.22572 9.74068C9.1475 9.82153 9.0171 9.82153 8.93356 9.7433C8.85541 9.66245 8.85541 9.52951 8.93356 9.45128C9.5491 8.83319 10.8217 9.40427 10.827 9.40689Z"
+                  fill="white" />
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -327,7 +351,7 @@
           <img alt="icon" src="assets/img/svg/domain-registration_svgrepo.com.svg" class="w-sm-24 h-sm-24">
           <h3 class="fs-40 fs-sm-32 font-bold text-gradient1">جست‌وجو دامنه</h3>
         </div>
-        <h5 class="text-center text-white-50 mb-0 mt-2 max-w-982 mx-auto fs-xs-14" data-aos="flip-up">جستجوی دامنه،
+        <h5 class="text-center text-white-50 mb-0 mt-4 max-w-982 mx-auto fs-xs-14" data-aos="flip-up">جستجوی دامنه،
           نخستین گام برای ثبت آن است. از
           طریق کادر زیر می‌توانید دامنه مورد نظر خود را با پسوند دلخواه بررسی کنید. اگر در وب‌سایت ایوو کلود این دامنه
           به نام شخص یا شرکتی ثبت نشده بود، می‌توانید آن را با قیمتی اقتصادی خریداری کنید.</h5>
@@ -349,7 +373,7 @@
           </button>
         </form>
         <!--  -->
-        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-5 mt-5">
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-4 mt-5">
           <div class="d-flex align-items-center justify-content-center text-center">
             <div class="px-4 pb-3 position-relative">
               <!-- bg -->
@@ -380,219 +404,13 @@
             <p class="font-bold fs-14 text-white mb-0">مشاهده پلن ما</p>
             <img alt="icon" src="assets/img/svg/arrow-left_svgrepo.com.svg">
           </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- custom server -->
-    <section class="py-lg-5 pb-4">
-      <div class="container">
-        <div class="row mx-0 g-lg-4 align-items-center">
-          <div class="col-lg-6 order-last order-lg-first">
-            <div class="d-flex align-items-center justify-content-center gap-3" data-aos="fade-up">
-              <img alt="icon" src="assets/img/svg/server-square-cloud_svgrepo.com.svg" class="w-sm-24 h-sm-24">
-              <h3 class="fs-36 fs-sm-32 font-bold text-gradient1 mb-0">سرور اختصاصی</h3>
-            </div>
-            <p class="fs-20 text-white text-justify mt-4 mb-0" data-aos="fade-down">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
-              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-              کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
-              شناخت فراوان جامعه و متخصصان را می طلبد،
-            </p>
-            <a data-aos="flip-up" class="d-flex align-items-center justify-content-center gap-2 mt-4">
-              <p class="font-bold fs-14 text-white mb-0">مشاهده پلن ما</p>
-              <img alt="icon" src="assets/img/svg/arrow-left_svgrepo.com.svg">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <img data-aos="fade-down" alt="img" class="img-fluid w-100" src="assets/img/Super Computer.png">
-          </div>
-        </div>
-        <div class="mt-4 row gx-4 gy-5">
-          <div class="col-xl-3 col-md-6">
-            <div data-aos="fade-up" class="rounded-30 bg-gradient2 position-relative card">
-              <!-- wave -->
-              <svg class="position-absolute -bottom-1 end-0 start-0 mx-auto z-10" width="81" height="21"
-                viewBox="0 0 81 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M5.61829 19.2819L0 20.1818H81L75.3817 19.2819C72.1755 18.7684 69.1425 17.4819 66.5449 15.5336L51.9 4.55C45.1444 -0.516667 35.8556 -0.516667 29.1 4.55L14.4551 15.5336C11.8575 17.4819 8.82451 18.7684 5.61829 19.2819Z"
-                  fill="#1f2731" />
-              </svg>
-              <!--  -->
-              <div
-                class="mx-3 position-relative -top-28 d-flex align-items-center justify-content-center gap-3 bg-main rounded-pill text-white z-10 py-3">
-                <img alt="icon" src="assets/img/svg/server_svgrepo.com.svg">
-                <p class="mb-0 font-bold fs-20">سرور اختصاصی</p>
-              </div>
-              <div class="text-white pb-4 pt-2 px-4">
-                <div class="d-flex align-items-center gap-2 mb-3">
-                  <img alt="icon" src="assets/img/svg/check-square_svgrepo.com.svg">
-                  <p class="mb-0">ارائه سرور مجازی ایران و خارج</p>
-                </div>
-                <div class="d-flex align-items-center gap-2 mb-3">
-                  <img alt="icon" src="assets/img/svg/check-square_svgrepo.com.svg">
-                  <p class="mb-0">ارائه IPv4 و IPv6 و ارائه سرویس به شکل BGP</p>
-                </div>
-                <div class="d-flex align-items-center gap-2 mb-3">
-                  <img alt="icon" src="assets/img/svg/check-square_svgrepo.com.svg">
-                  <p class="mb-0">پهنای باند unmetered با سرعت ‌بالا</p>
-                </div>
-              </div>
-              <a
-                class="d-flex align-items-center justify-content-center position-relative top-9 btnHover w-30 mx-auto overflow-hidden rounded-circle z-10">
-                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M20.5 11C20.9142 11 21.25 11.3358 21.25 11.75C21.25 12.1642 20.9142 12.5 20.5 12.5H11.25V17.75C11.25 18.0534 11.0673 18.3268 10.787 18.4429C10.5068 18.559 10.1842 18.4949 9.96967 18.2804L3.96967 12.2804C3.82902 12.1397 3.75 11.9489 3.75 11.75C3.75 11.5511 3.82902 11.3603 3.96967 11.2197L9.96967 5.21969C10.1842 5.00519 10.5068 4.94103 10.787 5.05711C11.0673 5.1732 11.25 5.44668 11.25 5.75002V11H20.5Z"
-                    fill="url(#paint0_linear_102_2262)" />
-                  <defs>
-                    <linearGradient id="paint0_linear_102_2262" x1="7.5" y1="7.25" x2="12.5" y2="16.25"
-                      gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#1BABC3" />
-                      <stop offset="1" stop-color="#88E7F7" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6">
-            <div data-aos="fade-down" class="rounded-30 bg-gradient2 position-relative card">
-              <!-- wave -->
-              <svg class="position-absolute -bottom-1 end-0 start-0 mx-auto z-10" width="81" height="21"
-                viewBox="0 0 81 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M5.61829 19.2819L0 20.1818H81L75.3817 19.2819C72.1755 18.7684 69.1425 17.4819 66.5449 15.5336L51.9 4.55C45.1444 -0.516667 35.8556 -0.516667 29.1 4.55L14.4551 15.5336C11.8575 17.4819 8.82451 18.7684 5.61829 19.2819Z"
-                  fill="#1f2731" />
-              </svg>
-              <!--  -->
-              <div
-                class="mx-3 position-relative -top-28 d-flex align-items-center justify-content-center gap-3 bg-main rounded-pill text-white z-10 py-3">
-                <img alt="icon" src="assets/img/svg/server-path_svgrepo.com.svg">
-                <p class="mb-0 font-bold fs-20">سرور مجازی</p>
-              </div>
-              <div class="text-white pb-4 pt-2 px-4">
-                <div class="d-flex align-items-center gap-2 mb-3">
-                  <img alt="icon" src="assets/img/svg/check-square_svgrepo.com.svg">
-                  <p class="mb-0">ارائه سرور مجازی ایران و خارج</p>
-                </div>
-                <div class="d-flex align-items-center gap-2 mb-3">
-                  <img alt="icon" src="assets/img/svg/check-square_svgrepo.com.svg">
-                  <p class="mb-0">ارائه IPv4 و IPv6 و ارائه سرویس به شکل BGP</p>
-                </div>
-                <div class="d-flex align-items-center gap-2 mb-3">
-                  <img alt="icon" src="assets/img/svg/check-square_svgrepo.com.svg">
-                  <p class="mb-0">پهنای باند unmetered با سرعت ‌بالا</p>
-                </div>
-              </div>
-              <a
-                class="d-flex align-items-center justify-content-center position-relative top-9 btnHover w-30 mx-auto overflow-hidden rounded-circle z-10">
-                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M20.5 11C20.9142 11 21.25 11.3358 21.25 11.75C21.25 12.1642 20.9142 12.5 20.5 12.5H11.25V17.75C11.25 18.0534 11.0673 18.3268 10.787 18.4429C10.5068 18.559 10.1842 18.4949 9.96967 18.2804L3.96967 12.2804C3.82902 12.1397 3.75 11.9489 3.75 11.75C3.75 11.5511 3.82902 11.3603 3.96967 11.2197L9.96967 5.21969C10.1842 5.00519 10.5068 4.94103 10.787 5.05711C11.0673 5.1732 11.25 5.44668 11.25 5.75002V11H20.5Z"
-                    fill="url(#paint0_linear_102_2262)" />
-                  <defs>
-                    <linearGradient id="paint0_linear_102_2262" x1="7.5" y1="7.25" x2="12.5" y2="16.25"
-                      gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#1BABC3" />
-                      <stop offset="1" stop-color="#88E7F7" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6">
-            <div data-aos="fade-up" class="rounded-30 bg-gradient2 position-relative card">
-              <!-- wave -->
-              <svg class="position-absolute -bottom-1 end-0 start-0 mx-auto z-10" width="81" height="21"
-                viewBox="0 0 81 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M5.61829 19.2819L0 20.1818H81L75.3817 19.2819C72.1755 18.7684 69.1425 17.4819 66.5449 15.5336L51.9 4.55C45.1444 -0.516667 35.8556 -0.516667 29.1 4.55L14.4551 15.5336C11.8575 17.4819 8.82451 18.7684 5.61829 19.2819Z"
-                  fill="#1f2731" />
-              </svg>
-              <!--  -->
-              <div
-                class="mx-3 position-relative -top-28 d-flex align-items-center justify-content-center gap-3 bg-main rounded-pill text-white z-10 py-3">
-                <img alt="icon" src="assets/img/svg/server-square-cloud_svgrepo.com (2).svg">
-                <p class="mb-0 font-bold fs-20">سرور ابری</p>
-              </div>
-              <div class="text-white pb-4 pt-2 px-4">
-                <div class="d-flex align-items-center gap-2 mb-3">
-                  <img alt="icon" src="assets/img/svg/check-square_svgrepo.com.svg">
-                  <p class="mb-0">ارائه سرور مجازی ایران و خارج</p>
-                </div>
-                <div class="d-flex align-items-center gap-2 mb-3">
-                  <img alt="icon" src="assets/img/svg/check-square_svgrepo.com.svg">
-                  <p class="mb-0">ارائه IPv4 و IPv6 و ارائه سرویس به شکل BGP</p>
-                </div>
-                <div class="d-flex align-items-center gap-2 mb-3">
-                  <img alt="icon" src="assets/img/svg/check-square_svgrepo.com.svg">
-                  <p class="mb-0">پهنای باند unmetered با سرعت ‌بالا</p>
-                </div>
-              </div>
-              <a
-                class="d-flex align-items-center justify-content-center position-relative top-9 btnHover w-30 mx-auto overflow-hidden rounded-circle z-10">
-                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M20.5 11C20.9142 11 21.25 11.3358 21.25 11.75C21.25 12.1642 20.9142 12.5 20.5 12.5H11.25V17.75C11.25 18.0534 11.0673 18.3268 10.787 18.4429C10.5068 18.559 10.1842 18.4949 9.96967 18.2804L3.96967 12.2804C3.82902 12.1397 3.75 11.9489 3.75 11.75C3.75 11.5511 3.82902 11.3603 3.96967 11.2197L9.96967 5.21969C10.1842 5.00519 10.5068 4.94103 10.787 5.05711C11.0673 5.1732 11.25 5.44668 11.25 5.75002V11H20.5Z"
-                    fill="url(#paint0_linear_102_2262)" />
-                  <defs>
-                    <linearGradient id="paint0_linear_102_2262" x1="7.5" y1="7.25" x2="12.5" y2="16.25"
-                      gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#1BABC3" />
-                      <stop offset="1" stop-color="#88E7F7" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6">
-            <div data-aos="fade-down" class="rounded-30 bg-gradient2 position-relative card">
-              <!-- wave -->
-              <svg class="position-absolute -bottom-1 end-0 start-0 mx-auto z-10" width="81" height="21"
-                viewBox="0 0 81 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M5.61829 19.2819L0 20.1818H81L75.3817 19.2819C72.1755 18.7684 69.1425 17.4819 66.5449 15.5336L51.9 4.55C45.1444 -0.516667 35.8556 -0.516667 29.1 4.55L14.4551 15.5336C11.8575 17.4819 8.82451 18.7684 5.61829 19.2819Z"
-                  fill="#1f2731" />
-              </svg>
-              <!--  -->
-              <div
-                class="mx-3 position-relative -top-28 d-flex align-items-center justify-content-center gap-3 bg-main rounded-pill text-white z-10 py-3">
-                <img alt="icon" src="assets/img/svg/server-square-update_svgrepo.com.svg">
-                <p class="mb-0 font-bold fs-20">سرور کولیکشن</p>
-              </div>
-              <div class="text-white pb-4 pt-2 px-4">
-                <div class="d-flex align-items-center gap-2 mb-3">
-                  <img alt="icon" src="assets/img/svg/check-square_svgrepo.com.svg">
-                  <p class="mb-0">ارائه سرور مجازی ایران و خارج</p>
-                </div>
-                <div class="d-flex align-items-center gap-2 mb-3">
-                  <img alt="icon" src="assets/img/svg/check-square_svgrepo.com.svg">
-                  <p class="mb-0">ارائه IPv4 و IPv6 و ارائه سرویس به شکل BGP</p>
-                </div>
-                <div class="d-flex align-items-center gap-2 mb-3">
-                  <img alt="icon" src="assets/img/svg/check-square_svgrepo.com.svg">
-                  <p class="mb-0">پهنای باند unmetered با سرعت ‌بالا</p>
-                </div>
-              </div>
-              <a
-                class="d-flex align-items-center justify-content-center position-relative top-9 btnHover w-30 mx-auto overflow-hidden rounded-circle z-10">
-                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M20.5 11C20.9142 11 21.25 11.3358 21.25 11.75C21.25 12.1642 20.9142 12.5 20.5 12.5H11.25V17.75C11.25 18.0534 11.0673 18.3268 10.787 18.4429C10.5068 18.559 10.1842 18.4949 9.96967 18.2804L3.96967 12.2804C3.82902 12.1397 3.75 11.9489 3.75 11.75C3.75 11.5511 3.82902 11.3603 3.96967 11.2197L9.96967 5.21969C10.1842 5.00519 10.5068 4.94103 10.787 5.05711C11.0673 5.1732 11.25 5.44668 11.25 5.75002V11H20.5Z"
-                    fill="url(#paint0_linear_102_2262)" />
-                  <defs>
-                    <linearGradient id="paint0_linear_102_2262" x1="7.5" y1="7.25" x2="12.5" y2="16.25"
-                      gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#1BABC3" />
-                      <stop offset="1" stop-color="#88E7F7" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </a>
-            </div>
-          </div>
+          <a
+            class="d-flex align-items-center justify-content-center btnHover px-4 py-3 gap-2 rounded-pill bg-main text-white font-bold">
+            <p class="mb-0">تکمیل خرید</p>
+            <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 1.5L7 7.5L1 1.5" stroke="white" stroke-width="2" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -602,10 +420,58 @@
       <div class="container">
         <div class="d-flex align-items-center justify-content-center gap-sm-5 gap-2">
           <img alt="img" src="assets/img/server_svgrepo.com.png" class="flex-shrink-0 w-sm-56">
-          <h1 data-aos="fade-down" class="font-bold fs-40 flex-grow-1 text-white text-center fs-sm-14 fs-md-24">اولین
+          <h1 data-aos="fade-down" class="font-bold fs-40 flex-grow-1 text-gradient1 text-center fs-sm-14 fs-md-24">اولین
             میزبانی وب سایت مبتنی بر سیستم توزیع محتوای کلود فلر
             (CDN Cloud Flare)</h1>
           <img alt="img" src="assets/img/server_svgrepo.com (2).png" class="flex-shrink-0 w-sm-56">
+        </div>
+      </div>
+    </section>
+
+    <!-- custom server -->
+    <section class="py-lg-5 pb-4">
+      <div class="container">
+        <div class="row mx-0 g-5 align-items-center">
+          <div class="col-lg-7 order-last order-lg-first ms-auto">
+            <div class="d-flex align-items-center gap-2" data-aos="fade-up">
+              <img alt="icon" src="assets/img/svg/server-square-cloud_svgrepo.com.svg" class="w-sm-24 h-sm-24 w-34 h-34">
+              <h3 class="fs-32 font-bold text-gradient1 mb-0">ثبت دامنه</h3>
+            </div>
+            <p class="fs-18 text-white text-justify mt-4 mb-0" data-aos="fade-down">
+              آدرس اینترنتی مورد نظر خود را با بهترین قیمت‌ها در ایووکلود، یکی از معتبرترین مراکز ثبت دامنه، ثبت کنید. تعداد ثبت بالای دامنه‌ها، امکان ارائه قیمت‌های رقابتی و مقرون‌به‌صرفه را فراهم کرده است. دامنه دلخواه خود را در جستجوگر آنلاین ایووکلود بررسی و در صورت آزاد بودن، به‌صورت آنی ثبت کنید.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <img data-aos="fade-down" alt="img" class="img-fluid w-100" src="assets/img/Frame.png">
+          </div>
+        </div>
+        <div class="row mx-0 g-5 align-items-center mt-4">
+          <div class="col-lg-4">
+            <img data-aos="fade-down" alt="img" class="img-fluid w-100" src="assets/img/_Ã‘Ã«Ã®Ã©_1.png">
+          </div>
+          <div class="col-lg-8">
+            <div class="d-flex align-items-center gap-2" data-aos="fade-up">
+              <img alt="icon" src="assets/img/svg/hosting_svgrepo.com.svg" class="w-sm-24 h-sm-24 w-34 h-34">
+              <h3 class="fs-32 font-bold text-gradient1 mb-0">انتقال دامنه</h3>
+            </div>
+            <p class="fs-18 text-white text-justify mt-4 mb-0" data-aos="fade-down">
+              دامنه خود را به ایووکلود منتقل کرده و از مزایای بیشتر، امنیت تضمین‌شده و قیمت‌های مناسب‌تر لذت ببرید. با دریافت کد EPP انتقال، فرآیند انتقال دامنه به‌راحتی انجام می‌شود. کنترل پنل مدیریت، امکان یکپارچه‌سازی هاست و دامنه را برای شما فراهم می‌کند.
+            </p>
+          </div>
+        </div>
+        <div class="row mx-0 g-5 align-items-center mt-4">
+          <div class="col-lg-7 order-last order-lg-first ms-auto">
+            <div class="d-flex align-items-center gap-2" data-aos="fade-up">
+              <img alt="icon" src="assets/img/svg/domain_svgrepo.com.svg" class="w-sm-24 h-sm-24 w-34 h-34">
+              <h3 class="fs-32 font-bold text-gradient1 mb-0">تمدید دامنه</h3>
+            </div>
+            <p class="fs-18 text-white text-justify mt-4 mb-0" data-aos="fade-down">
+              دامنه خود را با هزینه‌های شگفت‌انگیز بین ۱ تا ۱۰ سال تمدید کنید. برای پسوندهای .ir، تمدید تا حداکثر ۵ سال امکان‌پذیر است. تمدید در دوره‌های Grace و Redemption Period نیز در صورت امکان، با پرداخت جریمه استاندارد انجام می‌شود.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <img data-aos="fade-down" alt="img" class="img-fluid w-100" src="assets/img/Rectangle.png">
+          </div>
         </div>
       </div>
     </section>
@@ -700,51 +566,6 @@
                 <p class="mb-0 mt-3">همگام با فناوری</p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- wordpress host -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row mx-0 g-4 align-items-center">
-          <div class="col-lg-4 order-last order-lg-first">
-            <img data-aos="fade-down" alt="img" src="assets/img/Group 9295.png" class="img-fluid mx-auto d-block">
-          </div>
-          <div class="col-lg-8">
-            <h3 class="text-main fs-40 fs-md-24 font-bold text-center text-lg-end" data-aos="fade-up">هاست وردپرس چیست؟
-            </h3>
-            <p class="fs-14 text-white text-justify mt-4 lh-lg" data-aos="fade-down">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
-              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-              کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
-              شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
-              الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- special wordpress host -->
-    <section class="py-lg-5">
-      <div class="container">
-        <div class="row mx-0 g-4 align-items-center">
-          <div class="col-lg-7">
-            <h3 data-aos="fade-up" class="text-main fs-40 fs-md-24 text-center text-lg-end font-bold">هاست وردپرس
-              اختصاصی</h3>
-            <p data-aos="fade-down" class="fs-14 text-white text-justify mt-4 lh-lg">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
-              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-              کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده،
-              شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
-              الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری
-            </p>
-          </div>
-          <div class="col-lg-3 me-auto">
-            <img data-aos="fade-up" alt="img" src="assets/img/cloud with data servers.png"
-              class="img-fluid d-block mx-auto">
           </div>
         </div>
       </div>
@@ -1363,7 +1184,8 @@
           </div>
         </div>
       </div>
-      <div class="rounded-18 bg-gray font-bold text-dark text-center p-3 my-4">طراحی شده توسط <a class="hoverMain text-dark">الیتیست</a></div>
+      <div class="rounded-18 bg-gray font-bold text-dark text-center p-3 my-4">طراحی شده توسط <a
+          class="hoverMain text-dark">الیتیست</a></div>
     </div>
   </footer>
 
@@ -1374,10 +1196,13 @@
         <a>
           <span class="icon">
             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="transition" d="M9.5 16C10.3504 16.6303 11.3846 17 12.5 17C13.6154 17 14.6496 16.6303 15.5 16" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              <path class="transition" d="M22.5 12.2039V13.725C22.5 17.6258 22.5 19.5763 21.3284 20.7881C20.1569 22 18.2712 22 14.5 22H10.5C6.72876 22 4.84315 22 3.67157 20.7881C2.5 19.5763 2.5 17.6258 2.5 13.725V12.2039C2.5 9.91549 2.5 8.77128 3.0192 7.82274C3.5384 6.87421 4.48695 6.28551 6.38403 5.10813L8.38403 3.86687C10.3894 2.62229 11.3921 2 12.5 2C13.6079 2 14.6106 2.62229 16.616 3.86687L18.616 5.10812C20.5131 6.28551 21.4616 6.87421 21.9808 7.82274" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-              <p class="fs-12 font-bold text-main -top-45 position-relative">خانه</p>
+              <path class="transition" d="M9.5 16C10.3504 16.6303 11.3846 17 12.5 17C13.6154 17 14.6496 16.6303 15.5 16"
+                stroke="white" stroke-width="2" stroke-linecap="round" />
+              <path class="transition"
+                d="M22.5 12.2039V13.725C22.5 17.6258 22.5 19.5763 21.3284 20.7881C20.1569 22 18.2712 22 14.5 22H10.5C6.72876 22 4.84315 22 3.67157 20.7881C2.5 19.5763 2.5 17.6258 2.5 13.725V12.2039C2.5 9.91549 2.5 8.77128 3.0192 7.82274C3.5384 6.87421 4.48695 6.28551 6.38403 5.10813L8.38403 3.86687C10.3894 2.62229 11.3921 2 12.5 2C13.6079 2 14.6106 2.62229 16.616 3.86687L18.616 5.10812C20.5131 6.28551 21.4616 6.87421 21.9808 7.82274"
+                stroke="white" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <p class="fs-12 font-bold text-main -top-45 position-relative">خانه</p>
           </span>
         </a>
       </li>
@@ -1385,10 +1210,14 @@
         <a>
           <span class="icon">
             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="transition" d="M22.4844 10C22.4473 8.68893 22.3226 7.85305 21.9026 7.13974C21.3052 6.12523 20.2294 5.56066 18.0777 4.43152L16.0777 3.38197C14.3221 2.46066 13.4443 2 12.5 2C11.5557 2 10.6779 2.46066 8.92229 3.38197L6.92229 4.43152C4.77063 5.56066 3.69479 6.12523 3.0974 7.13974C2.5 8.15425 2.5 9.41667 2.5 11.9415V12.0585C2.5 14.5833 2.5 15.8458 3.0974 16.8603C3.69479 17.8748 4.77063 18.4393 6.92229 19.5685L8.92229 20.618C10.6779 21.5393 11.5557 22 12.5 22C13.4443 22 14.3221 21.5393 16.0777 20.618L18.0777 19.5685C20.2294 18.4393 21.3052 17.8748 21.9026 16.8603C22.3226 16.1469 22.4473 15.3111 22.4844 14" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              <path class="transition" d="M21.5 7.5L17.5 9.5M17.5 9.5C17.5 9.5 17.1953 9.65237 17 9.75C15.2426 10.6287 12.5 12 12.5 12M17.5 9.5V13M17.5 9.5L8 4.5M12.5 12L3.5 7.5M12.5 12V21.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-              <p class="fs-12 font-bold text-main -top-45 position-relative">خدمات</p>
+              <path class="transition"
+                d="M22.4844 10C22.4473 8.68893 22.3226 7.85305 21.9026 7.13974C21.3052 6.12523 20.2294 5.56066 18.0777 4.43152L16.0777 3.38197C14.3221 2.46066 13.4443 2 12.5 2C11.5557 2 10.6779 2.46066 8.92229 3.38197L6.92229 4.43152C4.77063 5.56066 3.69479 6.12523 3.0974 7.13974C2.5 8.15425 2.5 9.41667 2.5 11.9415V12.0585C2.5 14.5833 2.5 15.8458 3.0974 16.8603C3.69479 17.8748 4.77063 18.4393 6.92229 19.5685L8.92229 20.618C10.6779 21.5393 11.5557 22 12.5 22C13.4443 22 14.3221 21.5393 16.0777 20.618L18.0777 19.5685C20.2294 18.4393 21.3052 17.8748 21.9026 16.8603C22.3226 16.1469 22.4473 15.3111 22.4844 14"
+                stroke="white" stroke-width="2" stroke-linecap="round" />
+              <path class="transition"
+                d="M21.5 7.5L17.5 9.5M17.5 9.5C17.5 9.5 17.1953 9.65237 17 9.75C15.2426 10.6287 12.5 12 12.5 12M17.5 9.5V13M17.5 9.5L8 4.5M12.5 12L3.5 7.5M12.5 12V21.5"
+                stroke="white" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <p class="fs-12 font-bold text-main -top-45 position-relative">خدمات</p>
           </span>
         </a>
       </li>
@@ -1396,11 +1225,17 @@
         <a>
           <span class="icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="transition" d="M13.5 2C13.5 2 15.8335 2.21213 18.8033 5.18198C21.7731 8.15183 21.9853 10.4853 21.9853 10.4853" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              <path class="transition" d="M14.207 5.53564C14.207 5.53564 15.197 5.81849 16.6819 7.30341C18.1668 8.78834 18.4497 9.77829 18.4497 9.77829" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              <path class="transition" d="M15.6445 15.5437L16.1 15.0642L15.0124 14.0312L14.5569 14.5107L15.6445 15.5437ZM17.5987 14.8623L19.5092 15.962L20.2575 14.662L18.347 13.5623L17.5987 14.8623ZM19.8779 18.2419L18.4573 19.7375L19.5449 20.7705L20.9655 19.2749L19.8779 18.2419ZM17.6026 20.2167C16.1676 20.3584 12.4233 20.2375 8.35919 15.9587L7.27161 16.9917C11.7009 21.655 15.9261 21.8895 17.7499 21.7095L17.6026 20.2167ZM8.35919 15.9587C4.48307 11.8778 3.83289 8.43555 3.75185 6.92573L2.25401 7.00612C2.35326 8.85535 3.13844 12.6403 7.27161 16.9917L8.35919 15.9587ZM9.73454 9.32158L10.0213 9.01962L8.93375 7.98659L8.64694 8.28855L9.73454 9.32158ZM10.2466 5.26011L8.98569 3.47662L7.7609 4.34259L9.02188 6.12607L10.2466 5.26011ZM4.71769 3.09212L3.1481 4.74461L4.23568 5.77764L5.80528 4.12515L4.71769 3.09212ZM9.19073 8.80506C8.64694 8.28855 8.64626 8.28928 8.64556 8.29001C8.64532 8.29027 8.64462 8.29101 8.64415 8.29151C8.6432 8.29253 8.64222 8.29356 8.64124 8.29462C8.63928 8.29674 8.63724 8.29895 8.63514 8.30126C8.63095 8.30587 8.6265 8.31086 8.62182 8.31624C8.61247 8.327 8.60219 8.3393 8.5912 8.35319C8.56922 8.38097 8.54435 8.41511 8.51826 8.45587C8.46595 8.53763 8.40921 8.6453 8.36116 8.78032C8.26346 9.05489 8.21021 9.41849 8.27674 9.87256C8.40745 10.7647 8.99202 11.9644 10.5193 13.5724L11.6069 12.5394C10.1793 11.0363 9.82765 10.1106 9.7609 9.6551C9.7287 9.43535 9.76142 9.31956 9.77435 9.2832C9.78162 9.26276 9.78639 9.25708 9.78172 9.26436C9.77947 9.26788 9.77497 9.2745 9.76742 9.28406C9.76363 9.28884 9.75908 9.29436 9.75364 9.30062C9.75092 9.30374 9.74796 9.30705 9.74479 9.31055C9.74321 9.3123 9.74156 9.31409 9.73985 9.31593C9.739 9.31685 9.73812 9.31778 9.73724 9.31872C9.73679 9.31919 9.73611 9.31991 9.7359 9.32014C9.73522 9.32086 9.73453 9.32158 9.19073 8.80506ZM10.5193 13.5724C12.0422 15.1757 13.1923 15.806 14.0698 15.9485C14.5201 16.0216 14.8846 15.9632 15.1606 15.8544C15.2955 15.8012 15.4022 15.7387 15.4823 15.6819C15.5223 15.6535 15.5556 15.6266 15.5824 15.6031C15.5959 15.5913 15.6077 15.5803 15.618 15.5703C15.6232 15.5654 15.628 15.5606 15.6324 15.5562C15.6346 15.554 15.6367 15.5518 15.6387 15.5497C15.6397 15.5487 15.6407 15.5477 15.6417 15.5467C15.6422 15.5462 15.6429 15.5454 15.6431 15.5452C15.6438 15.5444 15.6445 15.5437 15.1007 15.0272C14.5569 14.5107 14.5576 14.51 14.5583 14.5093C14.5585 14.509 14.5592 14.5083 14.5596 14.5078C14.5605 14.5069 14.5614 14.506 14.5623 14.5051C14.5641 14.5033 14.5658 14.5015 14.5674 14.4998C14.5708 14.4965 14.574 14.4933 14.577 14.4904C14.583 14.4846 14.5885 14.4796 14.5933 14.4754C14.6028 14.467 14.6099 14.4616 14.6145 14.4584C14.6239 14.4517 14.6229 14.454 14.6102 14.459C14.5909 14.4666 14.5 14.4987 14.3103 14.4679C13.9077 14.4025 13.0391 14.0472 11.6069 12.5394L10.5193 13.5724ZM8.98569 3.47662C7.9721 2.04304 5.94387 1.80118 4.71769 3.09212L5.80528 4.12515C6.32812 3.5747 7.24855 3.61794 7.7609 4.34259L8.98569 3.47662ZM3.75185 6.92573C3.73042 6.52643 3.90429 6.12653 4.23568 5.77764L3.1481 4.74461C2.61225 5.30876 2.20497 6.09245 2.25401 7.00612L3.75185 6.92573ZM18.4573 19.7375C18.1783 20.0313 17.8864 20.1887 17.6026 20.2167L17.7499 21.7095C18.497 21.6357 19.1016 21.2373 19.5449 20.7705L18.4573 19.7375ZM10.0213 9.01962C10.9889 8.00094 11.0574 6.40677 10.2466 5.26011L9.02188 6.12607C9.44403 6.72314 9.37929 7.51752 8.93375 7.98659L10.0213 9.01962ZM19.5092 15.962C20.33 16.4345 20.4907 17.5968 19.8779 18.2419L20.9655 19.2749C22.2704 17.901 21.8904 15.6019 20.2575 14.662L19.5092 15.962ZM16.1 15.0642C16.4854 14.6584 17.086 14.5672 17.5987 14.8623L18.347 13.5623C17.2485 12.93 15.8861 13.1113 15.0124 14.0312L16.1 15.0642Z" fill="white"/>
-              </svg>
-              <p class="fs-12 font-bold text-main -top-45 position-relative">تماس با ما</p>
+              <path class="transition"
+                d="M13.5 2C13.5 2 15.8335 2.21213 18.8033 5.18198C21.7731 8.15183 21.9853 10.4853 21.9853 10.4853"
+                stroke="white" stroke-width="2" stroke-linecap="round" />
+              <path class="transition"
+                d="M14.207 5.53564C14.207 5.53564 15.197 5.81849 16.6819 7.30341C18.1668 8.78834 18.4497 9.77829 18.4497 9.77829"
+                stroke="white" stroke-width="2" stroke-linecap="round" />
+              <path class="transition"
+                d="M15.6445 15.5437L16.1 15.0642L15.0124 14.0312L14.5569 14.5107L15.6445 15.5437ZM17.5987 14.8623L19.5092 15.962L20.2575 14.662L18.347 13.5623L17.5987 14.8623ZM19.8779 18.2419L18.4573 19.7375L19.5449 20.7705L20.9655 19.2749L19.8779 18.2419ZM17.6026 20.2167C16.1676 20.3584 12.4233 20.2375 8.35919 15.9587L7.27161 16.9917C11.7009 21.655 15.9261 21.8895 17.7499 21.7095L17.6026 20.2167ZM8.35919 15.9587C4.48307 11.8778 3.83289 8.43555 3.75185 6.92573L2.25401 7.00612C2.35326 8.85535 3.13844 12.6403 7.27161 16.9917L8.35919 15.9587ZM9.73454 9.32158L10.0213 9.01962L8.93375 7.98659L8.64694 8.28855L9.73454 9.32158ZM10.2466 5.26011L8.98569 3.47662L7.7609 4.34259L9.02188 6.12607L10.2466 5.26011ZM4.71769 3.09212L3.1481 4.74461L4.23568 5.77764L5.80528 4.12515L4.71769 3.09212ZM9.19073 8.80506C8.64694 8.28855 8.64626 8.28928 8.64556 8.29001C8.64532 8.29027 8.64462 8.29101 8.64415 8.29151C8.6432 8.29253 8.64222 8.29356 8.64124 8.29462C8.63928 8.29674 8.63724 8.29895 8.63514 8.30126C8.63095 8.30587 8.6265 8.31086 8.62182 8.31624C8.61247 8.327 8.60219 8.3393 8.5912 8.35319C8.56922 8.38097 8.54435 8.41511 8.51826 8.45587C8.46595 8.53763 8.40921 8.6453 8.36116 8.78032C8.26346 9.05489 8.21021 9.41849 8.27674 9.87256C8.40745 10.7647 8.99202 11.9644 10.5193 13.5724L11.6069 12.5394C10.1793 11.0363 9.82765 10.1106 9.7609 9.6551C9.7287 9.43535 9.76142 9.31956 9.77435 9.2832C9.78162 9.26276 9.78639 9.25708 9.78172 9.26436C9.77947 9.26788 9.77497 9.2745 9.76742 9.28406C9.76363 9.28884 9.75908 9.29436 9.75364 9.30062C9.75092 9.30374 9.74796 9.30705 9.74479 9.31055C9.74321 9.3123 9.74156 9.31409 9.73985 9.31593C9.739 9.31685 9.73812 9.31778 9.73724 9.31872C9.73679 9.31919 9.73611 9.31991 9.7359 9.32014C9.73522 9.32086 9.73453 9.32158 9.19073 8.80506ZM10.5193 13.5724C12.0422 15.1757 13.1923 15.806 14.0698 15.9485C14.5201 16.0216 14.8846 15.9632 15.1606 15.8544C15.2955 15.8012 15.4022 15.7387 15.4823 15.6819C15.5223 15.6535 15.5556 15.6266 15.5824 15.6031C15.5959 15.5913 15.6077 15.5803 15.618 15.5703C15.6232 15.5654 15.628 15.5606 15.6324 15.5562C15.6346 15.554 15.6367 15.5518 15.6387 15.5497C15.6397 15.5487 15.6407 15.5477 15.6417 15.5467C15.6422 15.5462 15.6429 15.5454 15.6431 15.5452C15.6438 15.5444 15.6445 15.5437 15.1007 15.0272C14.5569 14.5107 14.5576 14.51 14.5583 14.5093C14.5585 14.509 14.5592 14.5083 14.5596 14.5078C14.5605 14.5069 14.5614 14.506 14.5623 14.5051C14.5641 14.5033 14.5658 14.5015 14.5674 14.4998C14.5708 14.4965 14.574 14.4933 14.577 14.4904C14.583 14.4846 14.5885 14.4796 14.5933 14.4754C14.6028 14.467 14.6099 14.4616 14.6145 14.4584C14.6239 14.4517 14.6229 14.454 14.6102 14.459C14.5909 14.4666 14.5 14.4987 14.3103 14.4679C13.9077 14.4025 13.0391 14.0472 11.6069 12.5394L10.5193 13.5724ZM8.98569 3.47662C7.9721 2.04304 5.94387 1.80118 4.71769 3.09212L5.80528 4.12515C6.32812 3.5747 7.24855 3.61794 7.7609 4.34259L8.98569 3.47662ZM3.75185 6.92573C3.73042 6.52643 3.90429 6.12653 4.23568 5.77764L3.1481 4.74461C2.61225 5.30876 2.20497 6.09245 2.25401 7.00612L3.75185 6.92573ZM18.4573 19.7375C18.1783 20.0313 17.8864 20.1887 17.6026 20.2167L17.7499 21.7095C18.497 21.6357 19.1016 21.2373 19.5449 20.7705L18.4573 19.7375ZM10.0213 9.01962C10.9889 8.00094 11.0574 6.40677 10.2466 5.26011L9.02188 6.12607C9.44403 6.72314 9.37929 7.51752 8.93375 7.98659L10.0213 9.01962ZM19.5092 15.962C20.33 16.4345 20.4907 17.5968 19.8779 18.2419L20.9655 19.2749C22.2704 17.901 21.8904 15.6019 20.2575 14.662L19.5092 15.962ZM16.1 15.0642C16.4854 14.6584 17.086 14.5672 17.5987 14.8623L18.347 13.5623C17.2485 12.93 15.8861 13.1113 15.0124 14.0312L16.1 15.0642Z"
+                fill="white" />
+            </svg>
+            <p class="fs-12 font-bold text-main -top-45 position-relative">تماس با ما</p>
           </span>
         </a>
       </li>
@@ -1408,10 +1243,13 @@
         <a>
           <span class="icon">
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="transition" d="M9.54331 21.007C10.0719 20.2441 10.8473 19.5897 11.8086 19.1272C12.7699 18.6647 13.8712 18.4167 15 18.4167C16.1288 18.4167 17.2301 18.6647 18.1914 19.1272C19.1527 19.5897 19.9281 20.2441 20.4567 21.007" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              <circle class="transition" cx="15" cy="11.375" r="3.625" stroke="white" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-              <p class="fs-12 font-bold text-main -top-45 position-relative">حساب کاربری</p>
+              <path class="transition"
+                d="M9.54331 21.007C10.0719 20.2441 10.8473 19.5897 11.8086 19.1272C12.7699 18.6647 13.8712 18.4167 15 18.4167C16.1288 18.4167 17.2301 18.6647 18.1914 19.1272C19.1527 19.5897 19.9281 20.2441 20.4567 21.007"
+                stroke="white" stroke-width="2" stroke-linecap="round" />
+              <circle class="transition" cx="15" cy="11.375" r="3.625" stroke="white" stroke-width="2"
+                stroke-linecap="round" />
+            </svg>
+            <p class="fs-12 font-bold text-main -top-45 position-relative">حساب کاربری</p>
           </span>
         </a>
       </li>
