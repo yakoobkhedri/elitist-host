@@ -529,6 +529,12 @@ background: linear-gradient(to right, #1BABC3 0%, #88E7F7 100%);
 .bg-gradient4{
     background: linear-gradient(131.6deg, #1BABC3 0%, #0C5A67 100%);
 }
+.bg-gradient5{
+    background-image: url('../img/Frame\ 9222.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .bg-blur {
     background-color: rgba(255, 255, 255, 0.52);
     -webkit-backdrop-filter: blur(4px);
@@ -589,6 +595,10 @@ background: linear-gradient(to right, #1BABC3 0%, #88E7F7 100%);
 }
 .fs-76 {
     font-size: 76px;
+}
+/* padding */
+.p-16{
+    padding: 16px;
 }
 /* max width */
 .max-w-602 {
@@ -673,6 +683,9 @@ box-sizing: border-box;
 }
 .w-128 {
     width: 128px;
+}
+.w-230 {
+    width: 230px;
 }
 .w-290 {
     width: 290px;
@@ -759,6 +772,11 @@ input[type="number"] {
 }
 .accordionContent.active,.accordionContent2.active{
     max-height: 2000px;
+}
+/* tabs */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active,.nav-tabs .nav-link:hover{
+    background-color: #1BABC3;
+    border: transparent;
 }
 /* hover */
 .hoverMain:hover{
