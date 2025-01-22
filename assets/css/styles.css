@@ -1153,7 +1153,9 @@ input[type="number"] {
     .w-sm-100 {
         width: 100%;
     }
-
+    .w-sm-84 {
+        width: 84px;
+    }
     .w-sm-56 {
         width: 56px;
     }
@@ -1161,7 +1163,9 @@ input[type="number"] {
     .w-sm-24 {
         width: 24px;
     }
-
+    .h-sm-84 {
+        height: 84px;
+    }
     .h-sm-70 {
         height: 70px;
     }
