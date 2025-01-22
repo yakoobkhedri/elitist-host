@@ -147,8 +147,8 @@
     </div>
   </div>
 
-  <header class="mt-4 position-relative z-10">
-    <div class="container h-85">
+  <header class="mt-4 position-relative z-10" id="header2">
+    <div class="container h-85 h-sm-61">
       <div
         class="rounded-pill h-100 overflow-hidden px-sm-5 px-3 bg-gradient1 d-flex align-items-center justify-content-between gap-3">
         <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
@@ -158,10 +158,14 @@
         <div class="d-flex align-items-center gap-5 h-100">
           <a><img alt="logo" src="assets/img/logo.png" class="w-xs-50"></a>
           <ul class="list-unstyled m-0 h-100 p-0 fs-20 fw-bold text-white d-xl-flex d-none align-items-center gap-5">
-            <li class="h-100 d-flex align-items-center justify-content-center "><a
-                class="text-white h-100 d-flex align-items-center justify-content-center">اصلی</a></li>
+            <li class="h-100 d-flex align-items-center justify-content-center position-relative">
+              <svg class="position-absolute -bottom-1 -right-17" width="70" height="18" viewBox="0 0 70 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path style="stroke: #112c3a !important;" d="M3.01307 16.7467L0 17.5H69.5001L60.4663 16.0546C58.1862 15.6898 56.0212 14.8035 54.1398 13.4648L40.5884 3.82246C34.8845 -0.236086 27.2044 -0.115346 21.631 4.1205L8.45127 14.137C6.83395 15.3662 4.98382 16.254 3.01307 16.7467Z" fill="#102e3e"/>
+                </svg>
+              <a class="text-white h-100 d-flex align-items-center justify-content-center">اصلی</a>
+            </li>
             <li id="openDropdown"
-              class="position-relative active d-flex align-items-center justify-content-center DropdownArea h-100">
+              class="position-relative active d-flex align-items-center justify-content-center DropdownArea h-100 active">
               <div class="position-relative cursor h-100 d-flex align-items-center justify-content-center DropdownArea">
                 <div class="d-flex align-items-center gap-2">
                   <p class="mb-0">خدمات</p>
@@ -169,12 +173,24 @@
                     <path d="M18 9.5L12 15.5L6 9.5" stroke="white" stroke-width="2" />
                   </svg>
                 </div>
+                <svg class="position-absolute -bottom-1 right-5" width="70" height="18" viewBox="0 0 70 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path style="stroke: #112c3a !important;" d="M3.01307 16.7467L0 17.5H69.5001L60.4663 16.0546C58.1862 15.6898 56.0212 14.8035 54.1398 13.4648L40.5884 3.82246C34.8845 -0.236086 27.2044 -0.115346 21.631 4.1205L8.45127 14.137C6.83395 15.3662 4.98382 16.254 3.01307 16.7467Z" fill="#102e3e"/>
+                </svg>
+                <div class="w-9 h-9 rounded-circle bg-main position-absolute top-94 right-39"></div>
               </div>
             </li>
-            <li class="h-100 d-flex align-items-center justify-content-center"><a
-                class="text-white h-100 d-flex align-items-center justify-content-center">درباره ما</a></li>
-            <li class="h-100 d-flex align-items-center justify-content-center"><a
-                class="text-white h-100 d-flex align-items-center justify-content-center">تماس با ما</a></li>
+            <li class="h-100 d-flex align-items-center justify-content-center position-relative">
+              <svg class="position-absolute -bottom-1 -right-1" width="70" height="18" viewBox="0 0 70 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path style="stroke: #112c3a !important;" d="M3.01307 16.7467L0 17.5H69.5001L60.4663 16.0546C58.1862 15.6898 56.0212 14.8035 54.1398 13.4648L40.5884 3.82246C34.8845 -0.236086 27.2044 -0.115346 21.631 4.1205L8.45127 14.137C6.83395 15.3662 4.98382 16.254 3.01307 16.7467Z" fill="#102e3e"/>
+                </svg>
+              <a class="text-white h-100 d-flex align-items-center justify-content-center">درباره ما</a>
+              </li>
+            <li class="h-100 d-flex align-items-center justify-content-center position-relative">
+              <svg class="position-absolute -bottom-1 right-8" width="70" height="18" viewBox="0 0 70 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path style="stroke: #112c3a !important;" d="M3.01307 16.7467L0 17.5H69.5001L60.4663 16.0546C58.1862 15.6898 56.0212 14.8035 54.1398 13.4648L40.5884 3.82246C34.8845 -0.236086 27.2044 -0.115346 21.631 4.1205L8.45127 14.137C6.83395 15.3662 4.98382 16.254 3.01307 16.7467Z" fill="#102e3e"/>
+                </svg>
+              <a class="text-white h-100 d-flex align-items-center justify-content-center">تماس با ما</a>
+              </li>
           </ul>
         </div>
         <div class="d-flex align-items-center gap-4">
@@ -317,8 +333,8 @@
     <section class="py-5" id="banner">
       <div class="container pt-5 mt-5">
         <div class="max-w-602 mx-auto pt-5 mt-5 position-relative">
-          <img alt="img" src="assets/img/domain.png" class="d-block mx-auto mt-5" data-aos="fade-down">
-          <p class="text-white fs-20 mt-4" data-aos="fade-up">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+          <img alt="img" src="assets/img/domain.png" class="d-block mx-auto mt-sm-5 max-w-373 px-5 px-sm-0" data-aos="fade-down">
+          <p class="text-white fs-20 mt-4 text-justify" data-aos="fade-up">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
             و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله ..</p>
           <div data-aos="fade-down" class="d-flex align-items-center justify-content-center gap-3 mt-4">
             <a
@@ -349,7 +365,7 @@
         <!-- title -->
         <div class="d-flex align-items-center justify-content-center gap-3" data-aos="fade-up">
           <img alt="icon" src="assets/img/svg/domain-registration_svgrepo.com.svg" class="w-sm-24 h-sm-24">
-          <h3 class="fs-40 fs-sm-32 font-bold text-gradient1">جست‌وجو دامنه</h3>
+          <h3 class="fs-40 fs-xs-24 font-bold text-gradient1">جست‌وجو دامنه</h3>
         </div>
         <h5 class="text-center text-white-50 mb-0 mt-4 max-w-982 mx-auto fs-xs-14" data-aos="flip-up">جستجوی دامنه،
           نخستین گام برای ثبت آن است. از
@@ -438,65 +454,65 @@
         </ul>
         <div class="tab-content mt-5" id="myTabContent">
           <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-            <div class="row mx-0 gx-5 gy-4">
+            <div class="row mx-0 gx-sm-5 gx-2 gy-sm-4 gy-3">
              <div class="col-lg-6">
-               <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                 <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.com</p>
-                 <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+               <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                 <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.com</p>
+                 <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                </a>
              </div>
              <div class="col-lg-6">
-               <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                 <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.IR</p>
-                 <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+               <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                 <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.IR</p>
+                 <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                </a>
              </div>
              <div class="col-lg-6">
-               <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                 <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.net</p>
-                 <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+               <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                 <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.net</p>
+                 <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                </a>
              </div>
              <div class="col-lg-6">
-               <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                 <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.org</p>
-                 <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+               <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                 <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.org</p>
+                 <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                </a>
              </div>
              <div class="col-lg-6">
-               <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                 <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.top</p>
-                 <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+               <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                 <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.top</p>
+                 <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                </a>
              </div>
              <div class="col-lg-6">
-               <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                 <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.eu</p>
-                 <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+               <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                 <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.eu</p>
+                 <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                </a>
              </div>
              <div class="col-lg-6">
-               <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                 <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.biz</p>
-                 <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+               <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                 <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.biz</p>
+                 <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                </a>
              </div>
              <div class="col-lg-6">
-               <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                 <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.us</p>
-                 <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+               <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                 <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.us</p>
+                 <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                </a>
              </div>
              <div class="col-lg-6">
-               <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                 <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.mobi</p>
-                 <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+               <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                 <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.mobi</p>
+                 <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                </a>
              </div>
              <div class="col-lg-6">
-               <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                 <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.vip</p>
-                 <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+               <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                 <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.vip</p>
+                 <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                </a>
              </div>
             </div>
@@ -508,47 +524,47 @@
             </a>
           </div>
           <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-            <div class="row mx-0 gx-5 gy-4">
+            <div class="row mx-0 gx-sm-5 gx-2 gy-sm-4 gy-3">
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.com</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.com</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.IR</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.IR</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.net</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.net</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.org</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.org</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.top</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.top</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.eu</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.eu</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.biz</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.biz</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
              </div>
@@ -560,59 +576,59 @@
              </a>
           </div>
           <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-            <div class="row mx-0 gx-5 gy-4">
+            <div class="row mx-0 gx-sm-5 gx-2 gy-sm-4 gy-3">
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.com</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.com</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.IR</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.IR</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.net</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.net</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.org</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.org</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.top</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.top</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.eu</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.eu</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.biz</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.biz</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.us</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.us</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.mobi</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.mobi</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
              </div>
@@ -624,41 +640,41 @@
              </a>
           </div>
           <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
-            <div class="row mx-0 gx-5 gy-4">
+            <div class="row mx-0 gx-sm-5 gx-2 gy-sm-4 gy-3">
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.com</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.com</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.IR</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.IR</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.net</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.net</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.org</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.org</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.top</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.top</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
               <div class="col-lg-6">
-                <a class="d-flex align-items-center justify-content-between py-4 px-5 rounded-30 bg-gradient2">
-                  <p class="rounded-12 font-bold text-white p-16 mb-0 bg-gradient5">.eu</p>
-                  <p class="fw-bold text-white py-2 px-4 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
+                <a class="d-flex align-items-center justify-content-between py-sm-4 py-2 px-sm-5 px-2 rounded-30 rounded-xs-12 bg-gradient2">
+                  <p class="rounded-12 font-bold text-white p-16 p-xs-10 mb-0 bg-gradient5">.eu</p>
+                  <p class="fw-bold text-white py-2 px-4 fs-sm-14 mb-0 rounded-pill bg-main">۹۰۳,۰۰۰ تومان</p>
                 </a>
               </div>
              </div>
