@@ -334,7 +334,7 @@
       <div class="container pt-5 mt-5">
         <div class="max-w-602 mx-auto pt-5 mt-5 position-relative">
           <img alt="img" src="assets/img/domain.png" class="d-block mx-auto mt-sm-5 max-w-373 px-5 px-sm-0" data-aos="fade-down">
-          <p class="text-white fs-20 mt-4 text-justify" data-aos="fade-up">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+          <p class="text-white fs-20 fs-xs-16 px-4 px-sm-0 mt-4 text-justify" data-aos="fade-up">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
             و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله ..</p>
           <div data-aos="fade-down" class="d-flex align-items-center justify-content-center gap-3 mt-4">
             <a
@@ -434,24 +434,27 @@
     <!-- tabs -->
      <section class="mt-5">
       <div class="container">
-        <ul class="nav nav-tabs justify-content-center fs-20 font-bold text-white border-0" id="myTab" role="tablist">
-          <li class="nav-item px-4 py-2 position-relative" role="presentation">
-            <img alt="bg" src="assets/img/Frame 12150.png" class="position-absolute h-100 w-100 top-0 bottom-0 start-0 end-0">
-            <button class="nav-link py-1 text-white rounded-pill position-relative active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">دامنه های محبوب</button>
-          </li>
-          <li class="nav-item px-4 py-2 position-relative" role="presentation">
-            <img alt="bg" src="assets/img/Frame 12151(1).png" class="position-absolute h-100 w-100 top-0 bottom-0 start-0 end-0">
-            <button class="nav-link py-1 text-white rounded-pill position-relative" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">دامنه های تخفیفی</button>
-          </li>
-          <li class="nav-item px-4 py-2 position-relative" role="presentation">
-            <img alt="bg" src="assets/img/Frame 12150.png" class="position-absolute h-100 w-100 top-0 bottom-0 start-0 end-0">
-            <button class="nav-link py-1 text-white rounded-pill position-relative" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">دامنه های جدید</button>
-          </li>
-          <li class="nav-item px-4 py-2 position-relative" role="presentation">
-            <img alt="bg" src="assets/img/Frame 12151(1).png" class="position-absolute h-100 w-100 top-0 bottom-0 start-0 end-0">
-            <button class="nav-link py-1 text-white rounded-pill position-relative" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">دامنه های ویژه</button>
-          </li>
-        </ul>
+        <div class="swiper tabsSwiper">
+          <ul class="swiper-wrapper nav nav-tabs flex-nowrap justify-content-center fs-20 font-bold text-white border-0" id="myTab" role="tablist">
+            <li class="swiper-slide nav-item px-4 py-2 justify-content-center d-flex position-relative" role="presentation">
+              <img alt="bg" src="assets/img/Frame 12150.png" class="position-absolute h-100 w-100 top-0 bottom-0 start-0 end-0">
+              <button class="nav-link py-1 text-white rounded-pill position-relative active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">دامنه های محبوب</button>
+            </li>
+            <li class="swiper-slide nav-item px-4 py-2 justify-content-center d-flex position-relative" role="presentation">
+              <img alt="bg" src="assets/img/Frame 12151(1).png" class="position-absolute h-100 w-100 top-0 bottom-0 start-0 end-0">
+              <button class="nav-link py-1 text-white rounded-pill position-relative" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">دامنه های تخفیفی</button>
+            </li>
+            <li class="swiper-slide nav-item px-4 py-2 justify-content-center d-flex position-relative" role="presentation">
+              <img alt="bg" src="assets/img/Frame 12150.png" class="position-absolute h-100 w-100 top-0 bottom-0 start-0 end-0">
+              <button class="nav-link py-1 text-white rounded-pill position-relative" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">دامنه های جدید</button>
+            </li>
+            <li class="swiper-slide nav-item px-4 py-2 justify-content-center d-flex position-relative" role="presentation">
+              <img alt="bg" src="assets/img/Frame 12151(1).png" class="position-absolute h-100 w-100 top-0 bottom-0 start-0 end-0">
+              <button class="nav-link py-1 text-white rounded-pill position-relative" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">دامنه های ویژه</button>
+            </li>
+          </ul>
+          <div class="swiper-button-next"></div>
+        </div>
         <div class="tab-content mt-5" id="myTabContent">
           <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
             <div class="row mx-0 gx-sm-5 gx-2 gy-sm-4 gy-3">
@@ -726,7 +729,7 @@
             <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2" data-aos="fade-up">
               <img alt="icon" src="assets/img/svg/server-square-cloud_svgrepo.com.svg"
                 class="w-sm-24 h-sm-24 w-34 h-34">
-              <h3 class="fs-32 font-bold text-gradient1 mb-0">ثبت دامنه</h3>
+              <h3 class="fs-32 fs-xs-24 font-bold text-gradient1 mb-0">ثبت دامنه</h3>
             </div>
             <p class="fs-18 text-white text-justify mt-4 mb-0" data-aos="fade-down">
               آدرس اینترنتی مورد نظر خود را با بهترین قیمت‌ها در ایووکلود، یکی از معتبرترین مراکز ثبت دامنه، ثبت کنید.
@@ -745,7 +748,7 @@
           <div class="col-lg-8">
             <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2" data-aos="fade-up">
               <img alt="icon" src="assets/img/svg/hosting_svgrepo.com.svg" class="w-sm-24 h-sm-24 w-34 h-34">
-              <h3 class="fs-32 font-bold text-gradient1 mb-0">انتقال دامنه</h3>
+              <h3 class="fs-32 fs-xs-24 font-bold text-gradient1 mb-0">انتقال دامنه</h3>
             </div>
             <p class="fs-18 text-white text-justify mt-4 mb-0" data-aos="fade-down">
               دامنه خود را به ایووکلود منتقل کرده و از مزایای بیشتر، امنیت تضمین‌شده و قیمت‌های مناسب‌تر لذت ببرید.با
@@ -756,9 +759,9 @@
         </div>
         <div class="row mx-0 g-5 align-items-center mt-lg-4">
           <div class="col-lg-7 ms-auto">
-            <div class="d-flex align-items-center gap-2" data-aos="fade-up">
+            <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2" data-aos="fade-up">
               <img alt="icon" src="assets/img/svg/domain_svgrepo.com.svg" class="w-sm-24 h-sm-24 w-34 h-34">
-              <h3 class="fs-32 font-bold text-gradient1 mb-0">تمدید دامنه</h3>
+              <h3 class="fs-32 fs-xs-24 font-bold text-gradient1 mb-0">تمدید دامنه</h3>
             </div>
             <p class="fs-18 text-white text-justify mt-4 mb-0" data-aos="fade-down">
               دامنه خود را با هزینه‌های شگفت‌انگیز بین ۱ تا ۱۰ سال تمدید کنید. برای پسوندهای .ir، تمدید تا حداکثر ۵ سال
@@ -777,9 +780,9 @@
           <div class="col-lg-8">
             <div class="d-flex align-items-center gap-2" data-aos="fade-up">
               <img alt="icon" src="assets/img/svg/server-hosting_svgrepo.com.svg" class="w-sm-24 h-sm-24 w-34 h-34">
-              <h3 class="fs-32 font-bold text-gradient1 mb-0">کنترل پنل مدیریتی پیشرفته</h3>
+              <h3 class="fs-32 fs-xs-24 font-bold text-gradient1 mb-0">کنترل پنل مدیریتی پیشرفته</h3>
             </div>
-            <ul data-aos="fade-down" class="text-white fs-18 mt-4 mb-0 pe-3">
+            <ul data-aos="fade-down" class="text-white fs-18 fs-sm-16 mt-4 mb-0 pe-3 ps-0">
               <li>
                 تغییر آنی Whois و مالکیت دامنه
               </li>
@@ -798,19 +801,19 @@
       </div>
     </section>
 
-    <section>
+    <section class="mt-5 mt-lg-0">
       <div class="container">
-        <div class="bg-main5 rounded-25 p-5 row mx-0 g-4 align-items-center">
+        <div class="bg-main5 rounded-25 p-md-5 p-4 px-2 px-md-5 row mx-0 g-4 align-items-center">
           <div class="col-lg-8">
             <img alt="img" src="assets/img/Frame 12191.png" class="w-100 d-block mb-3">
-            <div class="fs-20 text-white">
+            <div class="fs-20 fs-sm-14 text-white">
               <p>ثبت و مدیریت دامنه با ایووکلود: سریع، مطمئن و حرفه‌ای</p>
               <p>
                 با ۱۹ سال سابقه ایران سرور، ایووکلود به شما امکان
                 می‌دهد به‌راحتی فرآیندهایی مثل تغییر DNS، دریافت کد EPP، قفل دامنه و مدیریت WHOIS را انجام دهید.
               </p>
               <p> انواع پسوند دامنه:</p>
-              <ul class="pe-3 mb-0">
+              <ul class="pe-3 mb-0 ps-0">
                 <li>
                   بین‌المللی (.com، .net، .info): بدون محدودیت کشوری و مناسب برای همه کسب‌وکارها
                 </li>
@@ -825,22 +828,22 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <img alt="img" src="assets/img/Web link.png" class="d-block w-290 h-290">
+            <img alt="img" src="assets/img/Web link.png" class="d-block w-290 h-290 mx-auto">
           </div>
         </div>
       </div>
     </section>
 
     <!-- domain features -->
-    <section class="py-lg-5 pt-0">
+    <section class="py-lg-5 pt-0 mt-5 mt-lg-0">
       <div class="container">
-        <div class="d-flex align-items-center justify-content-center gap-3" data-aos="fade-down">
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3" data-aos="fade-down">
           <img alt="icon" src="assets/img/svg/lamp-charge_svgrepo.com.svg" class="">
-          <h1 class="fs-32 font-bold text-gradient1 mb-0">ثبت دامنه، اولین گام شما برای راه اندازی یک کسب وکار اینترنتی
+          <h1 class="fs-32 fs-xs-24 font-bold text-gradient1 mb-0">ثبت دامنه، اولین گام شما برای راه اندازی یک کسب وکار اینترنتی
             است</h1>
         </div>
         <div class="row mx-0 g-5 mt-4">
-          <div class="col-lg-3 col-md-6">
+          <div class="col-xl-3 col-lg-6">
             <div
               class="rounded-30 shadow4 py-5 bg-gradient2 text-white d-flex align-items-center justify-content-center text-center font-bold fs-20 card"
               data-aos="fade-down">
@@ -851,7 +854,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-xl-3 col-lg-6">
             <div
               class="rounded-30 shadow4 py-5 bg-gradient2 text-white d-flex align-items-center justify-content-center text-center font-bold fs-20 card"
               data-aos="fade-up">
@@ -861,7 +864,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-xl-3 col-lg-6">
             <div
               class="rounded-30 shadow4 py-5 bg-gradient2 text-white d-flex align-items-center justify-content-center text-center font-bold fs-20 card"
               data-aos="fade-down">
@@ -871,7 +874,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-xl-3 col-lg-6">
             <div
               class="rounded-30 shadow4 py-5 bg-gradient2 text-white d-flex align-items-center justify-content-center text-center font-bold fs-20 card"
               data-aos="fade-up">
@@ -893,7 +896,7 @@
             <img alt="img" src="assets/img/Group 9330.png" class="img-fluid w-100">
           </div>
           <div class="col-lg-8 px-0 px-sm-4 aos-init aos-animate">
-            <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-2">
+            <div class="d-flex align-items-center justify-content-center gap-2">
               <svg width="42" height="39" viewBox="0 0 42 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7.33301 33.4775V31.148C7.33301 26.4305 11.5397 22.6063 16.7288 22.6063H21.8538C27.0431 22.6063 31.2497 26.4305 31.2497 31.148V33.4775M12.458 33.4775V28.8184M26.1247 33.4775V28.8184M28.6872 10.182L29.2624 9.39765C29.8777 8.55852 31.1422 8.36161 32.0297 8.96672C32.9705 9.60815 33.0682 10.8584 32.2368 11.6143L30.9996 12.739C30.6128 13.0906 30.3955 13.5674 30.3955 14.0646M30.3955 16.3942V16.7048M24.1227 8.47062C25.5157 6.68687 27.806 5.52295 30.3955 5.52295C34.6412 5.52295 38.083 8.65187 38.083 12.5116C38.083 16.3713 34.6412 19.5002 30.3955 19.5002C28.2685 19.5002 26.3432 18.7149 24.9512 17.4457M26.1247 13.2881C26.1247 9.85724 23.0652 7.07598 19.2913 7.07598C15.5174 7.07598 12.458 9.85724 12.458 13.2881C12.458 16.7191 15.5174 19.5002 19.2913 19.5002C20.7113 19.5002 22.0301 19.1065 23.123 18.4325C24.9345 17.3153 26.1247 15.4281 26.1247 13.2881Z"
@@ -907,14 +910,14 @@
                   </linearGradient>
                 </defs>
               </svg>
-              <h1 class="fs-36 fs-md-18 font-bold text-main">سوالات متداول</h1>
+              <h1 class="fs-36 fs-sm-20 font-bold text-main">سوالات متداول</h1>
             </div>
             <div class="mt-5">
               <div class="mb-4 bg-main6 rounded-20">
                 <div
                   class="rounded-15 accordionBtn cursor-pointer bg-main-gradient-4 py-3 px-sm-4 px-3 border-purple d-flex align-items-center justify-content-between gap-3">
                   <div class="d-flex align-items-center gap-3">
-                    <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="flex-shrink-0" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M15.2656 12.9429C15.2656 11.4327 16.4899 10.2085 18 10.2085C19.5101 10.2085 20.7344 11.4327 20.7344 12.9429C20.7344 13.9454 20.1948 14.8219 19.3904 15.2979C18.6971 15.708 18 16.3301 18 17.1356V18.9585"
                         stroke="url(#paint0_linear_157_1131)" stroke-width="3" stroke-linecap="round" />
@@ -942,7 +945,7 @@
                         </linearGradient>
                       </defs>
                     </svg>
-                    <p class="fs-20 fs-md-14 font-bold text-white mb-0">چرا دامنه خود را در ایران سرور ثبت کنیم؟</p>
+                    <p class="fs-20 fs-sm-14 font-bold text-white mb-0">چرا دامنه خود را در ایران سرور ثبت کنیم؟</p>
                   </div>
                   <svg class="flex-shrink-0" width="26" height="23" viewBox="0 0 26 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -979,7 +982,7 @@
                 <div
                   class="rounded-15 accordionBtn cursor-pointer bg-main-gradient-4 py-3 px-sm-4 px-3 border-purple d-flex align-items-center justify-content-between gap-3">
                   <div class="d-flex align-items-center gap-3">
-                    <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="flex-shrink-0" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M15.2656 12.9429C15.2656 11.4327 16.4899 10.2085 18 10.2085C19.5101 10.2085 20.7344 11.4327 20.7344 12.9429C20.7344 13.9454 20.1948 14.8219 19.3904 15.2979C18.6971 15.708 18 16.3301 18 17.1356V18.9585"
                         stroke="url(#paint0_linear_157_1131)" stroke-width="3" stroke-linecap="round" />
@@ -1007,7 +1010,7 @@
                         </linearGradient>
                       </defs>
                     </svg>
-                    <p class="fs-20 fs-md-14 font-bold text-white mb-0">در ایران سرور چه پسوند های دامنه ای را می توانیم ثبت کنیم؟</p>
+                    <p class="fs-20 fs-sm-14 font-bold text-white mb-0">در ایران سرور چه پسوند های دامنه ای را می توانیم ثبت کنیم؟</p>
                   </div>
                   <svg class="flex-shrink-0" width="26" height="23" viewBox="0 0 26 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -1044,7 +1047,7 @@
                 <div
                   class="rounded-15 accordionBtn cursor-pointer bg-main-gradient-4 py-3 px-sm-4 px-3 border-purple d-flex align-items-center justify-content-between gap-3">
                   <div class="d-flex align-items-center gap-3">
-                    <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="flex-shrink-0" width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M15.2656 12.9429C15.2656 11.4327 16.4899 10.2085 18 10.2085C19.5101 10.2085 20.7344 11.4327 20.7344 12.9429C20.7344 13.9454 20.1948 14.8219 19.3904 15.2979C18.6971 15.708 18 16.3301 18 17.1356V18.9585"
                         stroke="url(#paint0_linear_157_1131)" stroke-width="3" stroke-linecap="round" />
@@ -1072,7 +1075,7 @@
                         </linearGradient>
                       </defs>
                     </svg>
-                    <p class="fs-20 fs-md-14 font-bold text-white mb-0">چرا قیمت ثبت دامنه در ایران سرور از همه جا ارزان تر است؟</p>
+                    <p class="fs-20 fs-sm-14 font-bold text-white mb-0">چرا قیمت ثبت دامنه در ایران سرور از همه جا ارزان تر است؟</p>
                   </div>
                   <svg class="flex-shrink-0" width="26" height="23" viewBox="0 0 26 23" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -1117,7 +1120,7 @@
         <div class="d-flex align-items-center justify-content-center gap-3" data-aos="fade-down">
           <img alt="icon" src="assets/img/svg/account-group-outlined_svgrepo.com.svg"
             class="w-sm-24 h-sm-24 flex-shrink-0">
-          <h1 class="fs-32 font-bold text-main mb-0">مشتریان درباره ما چه می گویند؟</h1>
+          <h1 class="fs-32 fs-xs-24 font-bold text-main mb-0">مشتریان درباره ما چه می گویند؟</h1>
         </div>
         <div class="row mx-0 g-4 gx-5 align-items-center mt-md-5 mt-3 pe-0">
           <div class="col-lg-4">
@@ -1199,10 +1202,10 @@
       <div class="container">
         <!-- title -->
         <div class="d-flex align-items-center justify-content-center gap-3">
-          <h3 class="fs-40 fs-sm-32 font-bold text-main mb-0" data-aos="flip-down">وبلاگ هاست الیتیست</h3>
+          <h3 class="fs-40 fs-xs-24 font-bold text-main mb-0" data-aos="flip-down">وبلاگ هاست الیتیست</h3>
         </div>
-        <h5 class="text-center text-white-50 mb-0 mt-2" data-aos="fade-up">هاستینگ قدرتمند برای کسب‌وکارهای حرفه‌ای</h5>
-        <div class="swiper blog py-4 px-3 mt-5">
+        <h5 class="text-center text-white-50 mb-0 mt-2 fs-xs-14" data-aos="fade-up">هاستینگ قدرتمند برای کسب‌وکارهای حرفه‌ای</h5>
+        <div class="swiper blog py-4 px-3 mt-sm-5 mt-3">
           <div class="swiper-wrapper">
             <div data-aos="fade-down" class="swiper-slide">
               <div class="rounded-30 bg-main2 position-relative card">

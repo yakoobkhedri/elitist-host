@@ -70,6 +70,31 @@ var testimonial = new Swiper(".testimonial", {
   autoplay: true,
 });
 
+var tabsSwiper = new Swiper(".tabsSwiper", {
+  slidesPerView: 1,
+  autoplay: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+var testimonial = new Swiper(".testimonial", {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  autoplay: true,
+});
+
 // accordion
 
 let accordionBtn = Array.from(document.getElementsByClassName('accordionBtn'));

@@ -1129,7 +1129,9 @@ input[type="number"] {
     .fs-sm-32 {
         font-size: 32px;
     }
-
+    .fs-sm-20 {
+        font-size: 20px;
+    }
     .fs-sm-16 {
         font-size: 16px;
     }
