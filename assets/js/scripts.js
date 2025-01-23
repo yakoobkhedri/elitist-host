@@ -71,8 +71,8 @@ var testimonial = new Swiper(".testimonial", {
 });
 
 var tabsSwiper = new Swiper(".tabsSwiper", {
-  slidesPerView: 1,
-  autoplay: true,
+  slidesPerView: 1.4,
+  loop: true,
   breakpoints: {
     576: {
       slidesPerView: 2,

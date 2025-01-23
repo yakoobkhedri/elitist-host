@@ -99,7 +99,7 @@
 
 .indicator {
     position: absolute;
-    top: -67%;
+    top: -66%;
     width: 70px;
     height: 70px;
     background-image: url('../img/Rectangle\ 4595.png');
@@ -1086,7 +1086,14 @@ input[type="number"] {
     transform: translateZ(40px);
     opacity: 0.85;
 }
+/* swiper */
 
+.tabsSwiper .swiper-button-next::after {
+    content: url('../img/Vector.png');
+  }
+  .tabsSwiper .swiper-button-prev::after {
+    content: url('../img/Vector\ \(2\).png');
+  }
 @media only screen and (max-width:1400px) {
     .right-xl-25-3 {
         right: 25.3%;
