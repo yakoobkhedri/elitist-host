@@ -801,7 +801,10 @@ a {
 .p-16 {
     padding: 16px;
 }
-
+/* margin */
+.-mr-116{
+    margin-right: -116px;
+}
 /* max width */
 .max-w-373 {
     max-width: 373px;
@@ -1110,6 +1113,16 @@ input[type="number"] {
     transform: translateZ(40px);
     opacity: 0.85;
 }
+.hoverBox > img:nth-child(2){
+    opacity:0;
+    visibility: hidden;
+    display: none !important;
+}
+.hoverBox:hover > img:nth-child(2){
+    opacity:100%;
+    visibility: visible;
+    display:block !important;
+}
 /* swiper */
 
 .tabsSwiper .swiper-button-next::after {
@@ -1149,6 +1162,12 @@ input[type="number"] {
 
     .w-md-90 {
         width: 90px;
+    }
+    .mr-md-0{
+        margin-right:0;
+    }
+    .-mt-md-85{
+        margin-top: -85px;
     }
 }
 
