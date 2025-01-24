@@ -170,7 +170,21 @@ html {
 body {
     font-family: "yekan-Regular";
     user-select: none;
-    background-color: #1f2731;
+    background-image: linear-gradient(
+    90deg,
+    hsl(208deg 31% 10%) 0%,
+    hsl(209deg 28% 11%) 10%,
+    hsl(210deg 27% 12%) 20%,
+    hsl(211deg 25% 13%) 30%,
+    hsl(212deg 24% 14%) 40%,
+    hsl(213deg 23% 15%) 50%,
+    hsl(213deg 22% 16%) 60%,
+    hsl(213deg 22% 16%) 69%,
+    hsl(213deg 22% 16%) 78%,
+    hsl(213deg 22% 16%) 86%,
+    hsl(213deg 22% 16%) 94%,
+    hsl(213deg 22% 16%) 100%
+  );
     overflow-x: hidden;
 }
 
@@ -382,7 +396,15 @@ header ul li:nth-child(3) a:before {
     height: 100vh;
     inset: 0;
 }
-
+#banner2 {
+    background-image: url('../img/Mask group (2).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: -109px;
+    position: relative;
+}
 /* dropdown */
 #dropdown a:hover {
     color: #1babc3;
@@ -511,7 +533,9 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+.text-gray{
+    color: #C3C1C1;
+}
 /* box shadow */
 .shadow1 {
     box-shadow: 0px 0px 26.399999618530273px 0px #00000040;
