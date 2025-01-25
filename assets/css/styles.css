@@ -936,7 +936,9 @@ a {
 .w-128 {
     width: 128px;
 }
-
+.w-140 {
+    width: 140px;
+}
 .w-230 {
     width: 230px;
 }
@@ -992,7 +994,9 @@ a {
 .h-110 {
     height: 110px;
 }
-
+.h-140 {
+    height: 140px;
+}
 .h-143 {
     height: 143px;
 }
@@ -1145,10 +1149,10 @@ input[type="number"] {
 }
 /* swiper */
 
-.tabsSwiper .swiper-button-next::after {
+.tabsSwiper .swiper-button-next::after,.tabsSwiper2 .swiper-button-next::after {
     content: url('../img/Vector.png');
   }
-  .tabsSwiper .swiper-button-prev::after {
+.tabsSwiper .swiper-button-prev::after, .tabsSwiper2 .swiper-button-prev::after {
     content: url('../img/Vector\ \(2\).png');
   }
 @media only screen and (max-width:1400px) {

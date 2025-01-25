@@ -94,7 +94,30 @@ var testimonial = new Swiper(".testimonial", {
   spaceBetween: 15,
   autoplay: true,
 });
-
+var tabsSwiper2 = new Swiper(".tabsSwiper2", {
+  slidesPerView: 1.4,
+  loop: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1400: {
+      slidesPerView: 6,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+var testimonial = new Swiper(".testimonial", {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  autoplay: true,
+});
 // accordion
 
 let accordionBtn = Array.from(document.getElementsByClassName('accordionBtn'));
