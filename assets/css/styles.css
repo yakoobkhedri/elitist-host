@@ -405,6 +405,15 @@ header ul li:nth-child(3) a:before {
     margin-top: -109px;
     position: relative;
 }
+#banner3 {
+    background-image: url('../img/Mask\ group\ \(3\).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: -109px;
+    position: relative;
+}
 /* dropdown */
 #dropdown a:hover {
     color: #1babc3;
@@ -725,7 +734,9 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.bg-gradient6{
+    background: linear-gradient(0deg, #88E7F71A 0%, #70ECFF00 100%);
+}
 .bg-blur {
     background-color: rgba(255, 255, 255, 0.52);
     -webkit-backdrop-filter: blur(4px);
@@ -830,6 +841,9 @@ a {
 .border-main {
     border: 1px solid #008BF9;
 }
+.border-main2{
+    border: 1px solid #A7D6EF26;
+}
 
 .border-secondary {
     border-color: #6c757d00 !important;
@@ -837,12 +851,12 @@ a {
 
 .border-gradient1 {
     background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
-        radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
-        radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
-        radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
-        linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
-        linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
-        linear-gradient(2deg, #1b3135 0%, rgba(137, 178, 199, 1) 100%);
+    radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+    radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+    radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+    linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+    linear-gradient(2deg, #1b3135 0%, rgba(137, 178, 199, 1) 100%);
     border-radius: 8px;
     padding: 9px;
     box-sizing: border-box;
@@ -855,7 +869,13 @@ a {
 .border-r-solid {
     border-right: 2px solid #1BABC3;
 }
-
+.border-b-hover{
+    border-bottom: 0px solid transparent;
+    transition: all .4s;
+}
+.border-b-hover:hover{
+    border-bottom: 8px solid #00C0E047;
+}
 /* width */
 .w-3 {
     width: 3px;
