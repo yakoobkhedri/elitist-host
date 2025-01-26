@@ -401,7 +401,7 @@ header ul li:nth-child(3) a:before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 102vh;
     margin-top: -109px;
     position: relative;
 }
@@ -410,7 +410,7 @@ header ul li:nth-child(3) a:before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 102vh;
     margin-top: -109px;
     position: relative;
 }
@@ -595,6 +595,9 @@ a {
 }
 .top-94 {
     top: 94px;
+}
+.-top-135 {
+    top: -135px;
 }
 /* bottom */
 .-bottom-1 {
@@ -939,6 +942,12 @@ a {
 .w-140 {
     width: 140px;
 }
+.w-147 {
+    width: 147px;
+}
+.w-180 {
+    width: 180px;
+}
 .w-230 {
     width: 230px;
 }
@@ -1000,7 +1009,9 @@ a {
 .h-143 {
     height: 143px;
 }
-
+.h-237 {
+    height: 237px;
+}
 .h-290 {
     height: 290px;
 }
@@ -1262,6 +1273,13 @@ input[type="number"] {
 
     .rounded-sm-100 {
         border-radius: 100px !important;
+    }
+    .position-md-static{
+        position: static !important;
+    }
+    #banner3,#banner2,#banner,
+    #banner::before {
+        height: 105vh;
     }
 }
 
