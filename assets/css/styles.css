@@ -414,6 +414,15 @@ header ul li:nth-child(3) a:before {
     margin-top: -109px;
     position: relative;
 }
+#banner4 {
+    background-image: url('../img/blogbanner.PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 102vh;
+    margin-top: -109px;
+    position: relative;
+}
 /* dropdown */
 #dropdown a:hover {
     color: #1babc3;
@@ -497,7 +506,9 @@ a {
 .rounded-30 {
     border-radius: 30px !important;
 }
-
+.rounded-42 {
+    border-radius: 42px !important;
+}
 /* z index */
 .z-0 {
     z-index: 0;
@@ -879,6 +890,9 @@ a {
 .border-b-hover:hover{
     border-bottom: 8px solid #00C0E047;
 }
+.border-main-hover:hover{
+    border: 1px solid #1BABC3;
+}
 /* width */
 .w-3 {
     width: 3px;
@@ -1015,7 +1029,9 @@ a {
 .h-290 {
     height: 290px;
 }
-
+.h-327 {
+    height: 327px;
+}
 /* transition */
 .transition {
     transition: all .4s;
@@ -1278,7 +1294,7 @@ input[type="number"] {
         position: static !important;
     }
     #banner3,#banner2,#banner,
-    #banner::before {
+    #banner::before,#banner4 {
         height: 105vh;
     }
 }
