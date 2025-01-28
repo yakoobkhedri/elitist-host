@@ -893,6 +893,10 @@ a {
 .border-main-hover:hover{
     border: 1px solid #1BABC3;
 }
+.border-gradient2{
+border: 1px solid;
+border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba(213, 229, 255, 0) 59.48%);
+}
 /* width */
 .w-3 {
     width: 3px;
@@ -1173,6 +1177,9 @@ input[type="number"] {
     opacity:100%;
     visibility: visible;
     display:block !important;
+}
+.pageHover:hover{
+    background-color: #1BABC3;
 }
 /* swiper */
 
