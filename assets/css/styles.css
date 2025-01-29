@@ -283,7 +283,6 @@ header ul li::after {
     margin-right: auto;
     transition: all .4s;
 }
-
 header ul li:first-child::after {
     right: -11px;
 }
@@ -422,6 +421,13 @@ header ul li:nth-child(3) a:before {
     height: 102vh;
     margin-top: -109px;
     position: relative;
+}
+#banner5 {
+    background-image: url('../img/OIP (11) 2.PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 360px;
 }
 /* dropdown */
 #dropdown a:hover {
