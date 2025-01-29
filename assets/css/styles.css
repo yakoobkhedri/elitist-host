@@ -717,7 +717,9 @@ a {
     background: rgb(213, 229, 255);
     background: linear-gradient(74deg, rgba(213, 229, 255, 0.43) 0%, rgba(127, 208, 252, 0.08) 100%);
 }
-
+.bg-main7{
+    background-color: #1d252f;
+}
 .bg-gray {
     background-color: #D9D9D9;
 }
@@ -1240,6 +1242,9 @@ input[type="number"] {
     .fs-sm-20 {
         font-size: 20px;
     }
+    .fs-sm-18 {
+        font-size: 18px;
+    }
     .fs-sm-16 {
         font-size: 16px;
     }
@@ -1296,6 +1301,9 @@ input[type="number"] {
 
     .rounded-sm-100 {
         border-radius: 100px !important;
+    }
+    .rounded-sm-12 {
+        border-radius: 12px !important;
     }
     .position-md-static{
         position: static !important;
