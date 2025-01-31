@@ -5,12 +5,15 @@ let openDropdown = document.getElementById('openDropdown');
 
 openDropdown.addEventListener('mouseenter' , function () {
   dropdown.classList.add('active');
-})
-openDropdown.addEventListener('mouseleave' , function () {
-  dropdown.classList.remove('active');
+  openDropdown.classList.add('active')
 })
 
-
+document.addEventListener('mousemove', (event) => {
+  if (!event.target.closest('.dropdown') && !event.target.closest('.DropdownArea')) {
+    dropdown.classList.remove('active');
+    openDropdown.classList.remove('active')
+  }
+})
 
 // swiper
 
