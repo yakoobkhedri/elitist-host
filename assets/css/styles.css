@@ -1429,6 +1429,12 @@ input[type="number"] {
     .w-xs-65 {
         width: 65px;
     }
+    .w-xs-100 {
+        width: 100%;
+    }
+    .lh-xs-18{
+        line-height: 18px !important;
+    }
     .rounded-xs-12 {
         border-radius: 12px !important;
     }
