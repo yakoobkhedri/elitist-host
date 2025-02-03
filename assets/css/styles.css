@@ -179,15 +179,15 @@ body {
     transition: all .4s;
 }
 
-#mobileNav>li:hover>a {
+#mobileNav>li:hover>a,#mobileNav>li.active>a {
     background: linear-gradient(-90.166deg, rgba(255, 255, 255, 3%) 0%, rgba(44, 33, 56, 10%) 100%);
 }
 
-#mobileNav>li:hover>a {
+#mobileNav>li:hover>a,#mobileNav>li.active>a {
     color: #1BABC3 !important;
 }
 
-#mobileNav>li:hover a>svg path {
+#mobileNav>li:hover a>svg path,#mobileNav>li.active a>svg path {
     stroke: #1BABC3;
 }
 
@@ -201,7 +201,9 @@ body {
     border-radius: 50%;
     right: -4.3px;
 }
-
+.lists .accordionContent ul>li:before {
+    content: none;
+}
 header ul li {
     position: relative;
     text-align: center;
@@ -360,7 +362,7 @@ header ul li:nth-child(3) a:before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 581px;
     margin-top: -109px;
     position: relative;
 }
@@ -369,7 +371,7 @@ header ul li:nth-child(3) a:before {
     /* content: url('../img/Rectangle 4568.png'); */
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 581px;
     inset: 0;
 }
 
@@ -378,7 +380,7 @@ header ul li:nth-child(3) a:before {
     position: absolute;
     background-color: #03181BBF;
     width: 100%;
-    height: 100vh;
+    height: 581px;
     inset: 0;
 }
 #banner2 {
@@ -386,7 +388,7 @@ header ul li:nth-child(3) a:before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 102vh;
+    height: 581px;
     margin-top: -109px;
     position: relative;
 }
@@ -395,7 +397,7 @@ header ul li:nth-child(3) a:before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 102vh;
+    height: 581px;
     margin-top: -109px;
     position: relative;
 }
@@ -404,7 +406,7 @@ header ul li:nth-child(3) a:before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 102vh;
+    height: 581px;
     margin-top: -109px;
     position: relative;
 }
@@ -1005,7 +1007,6 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 .w-79 {
     width: 79%;
 }
-
 .w-84 {
     width: 84px;
 }
@@ -1149,7 +1150,9 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 input[type="number"] {
     -moz-appearance: textfield;
 }
-
+select:focus-visible {
+ outline: none;
+}
 /* accordion */
 .accordionContent,
 .accordionContent2 {
@@ -1383,7 +1386,45 @@ input[type="number"] {
     }
     #banner3,#banner2,#banner,
     #banner::before,#banner4 {
-        height: 105vh;
+        height: 647px;
+        position: relative;
+    }
+    #banner::before {
+        content: none;
+      }
+      #banner{
+        background-image: url('../img/Group\ 9327.png');
+    }
+      #banner2::after{
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          inset: 0;
+          background-color: #010F1269;
+      }
+    #banner2{
+        background-image: url('../img/server-cloud-data-storage-concept-cloudscape-digital-online-service-global-network-web-database-backup-computer-infrastructure 1.png');
+    }
+    #banner3::before {
+        content: none;
+      }
+    #banner3{
+        background-image: url('../img/Group\ 9327\ \(2\).png');
+    }
+    #banner4::before {
+        content: '';
+        position: absolute;
+        background-color: #010F1269;
+        width: 100%;
+        height: 647px;
+        inset: 0;
+      }
+    #banner4{
+        background-image: url('../img/vecteezy_server-room-data-center-datacenter-hardware-cluster_33880804\ \(1\)\ 1.png');
+    }
+    #banner5{
+        background-image: url('../img/OIP\ \(12\)\ 2.png');
     }
 }
 
@@ -1393,6 +1434,9 @@ input[type="number"] {
     }
     .fs-xs-24 {
         font-size: 24px;
+    }
+    .fs-xs-20 {
+        font-size: 20px;
     }
     .fs-xs-16 {
         font-size: 16px;
@@ -1417,7 +1461,9 @@ input[type="number"] {
     .fs-xs-9 {
         font-size: 9px;
     }
-
+    .fs-xs-8 {
+        font-size: 8px;
+    }
     .w-xs-25 {
         width: 25px;
     }
