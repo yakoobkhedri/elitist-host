@@ -7,7 +7,10 @@
     font-family: "yekan-Bold";
     src: url('../fonts/iranyekan/iranyekanwebbold.ttf') format("TrueType");
 }
-
+@font-face {
+    font-family: "amis-Bold";
+    src: url('../fonts/Amis@DiakoGraphic.ttf') format("TrueType");
+}
 /* navigation */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -173,7 +176,9 @@ body {
     background-color: #1f2731;
     overflow-x: hidden;
 }
-
+.font-amis{
+    font-family: "amis-Bold";
+}
 #mobileNav li a,
 #mobileNav li a>svg path {
     transition: all .4s;
@@ -203,6 +208,10 @@ body {
 }
 .lists .accordionContent ul>li:before {
     content: none;
+}
+
+header ul{
+    font-size: 16px !important;
 }
 header ul li {
     position: relative;
@@ -241,15 +250,15 @@ header ul li::after {
     transition: all .4s;
 }
 
-#header2 ul li svg {
+#header2 ul li > div > svg {
     transition: all .4s;
     opacity: 0;
     visibility: hidden;
     bottom: -28px;
 }
 
-#header2 ul li:hover svg,
-#header2 ul li.active svg {
+#header2 ul li:hover > div > svg,
+#header2 ul li.active > div > svg {
     bottom: -1px;
     opacity: 100%;
     visibility: visible;
@@ -281,12 +290,14 @@ header ul li.active::after {
     opacity: 100%;
     visibility: visible;
 }
-
+header ul li:last-child:before {
+   right: -1px;
+}
 header ul li::before {
     content: '';
     position: absolute;
     left: 0;
-    right: 0;
+    right: 6px;
     bottom: -46px;
     opacity: 0;
     visibility: hidden !important;
@@ -328,7 +339,9 @@ header ul li>div,
     position: relative;
     text-align: center;
 }
-
+#mobileNav li a {
+  font-size: 16px;
+}
 header ul li a:before,
 header ul li>div:before,
 #mobileNav li a::before {
@@ -644,7 +657,7 @@ a {
     right: 39px;
 }
 .right-21-8 {
-    right: 21.8%;
+    right: 20.8%;
 }
 
 .-right-17 {
@@ -1035,6 +1048,9 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 .w-180 {
     width: 180px;
 }
+.w-186 {
+    width: 186px;
+}
 .w-230 {
     width: 230px;
 }
@@ -1269,7 +1285,7 @@ select:focus-visible {
   }
 @media only screen and (max-width:1400px) {
     .right-xl-25-3 {
-        right: 25.3%;
+        right: 24.3%;
     }
 }
 
@@ -1489,6 +1505,9 @@ select:focus-visible {
     }
     .p-xs-10{
         padding: 10px;
+    }
+    #mobileNav li a{
+        font-size: 16px;
     }
 }
 
