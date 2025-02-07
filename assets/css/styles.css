@@ -11,6 +11,10 @@
     font-family: "amis-Bold";
     src: url('../fonts/Amis@DiakoGraphic.ttf') format("TrueType");
 }
+@font-face {
+    font-family: "Arena-Bold";
+    src: url('../fonts/Arena\ @DiakoGraphic.ttf') format("TrueType");
+}
 /* navigation */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -179,6 +183,9 @@ body {
 .font-amis{
     font-family: "amis-Bold";
 }
+.font-Arena{
+    font-family: "Arena-Bold";
+}
 #mobileNav li a,
 #mobileNav li a>svg path {
     transition: all .4s;
@@ -249,21 +256,26 @@ header ul li::after {
     margin-right: auto;
     transition: all .4s;
 }
-
-#header2 ul li > div > svg {
+#header2 ul li:nth-child(3):before,#header2 ul li:last-child:before {
+    right: 13px;
+}
+#header2 ul li > svg,#header2 #openDropdown > div > svg {
     transition: all .4s;
     opacity: 0;
     visibility: hidden;
     bottom: -28px;
 }
 
-#header2 ul li:hover > div > svg,
-#header2 ul li.active > div > svg {
+#header2 ul li:hover > svg,
+#header2 ul li.active > svg,
+#header2 #openDropdown:hover > div > svg {
     bottom: -1px;
     opacity: 100%;
     visibility: visible;
 }
-
+#header2 ul li#openDropdown > div div:last-child{
+  transition: all .4s;
+}
 #header2 ul li#openDropdown.active > div div:last-child {
     top: 74px;
 }
@@ -1441,6 +1453,9 @@ select:focus-visible {
     }
     #banner5{
         background-image: url('../img/OIP\ \(12\)\ 2.png');
+    }
+    .lh-sm-lg{
+        line-height: 24px;
     }
 }
 
