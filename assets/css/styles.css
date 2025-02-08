@@ -622,6 +622,9 @@ a {
 .-bottom-6{
     bottom: -6px;
 }
+.-bottom-12{
+    bottom: -12px;
+}
 /* top */
 .-top-8 {
     top: -8px;
@@ -638,7 +641,9 @@ a {
 .-top-15 {
     top: -15px;
 }
-
+.top-21 {
+    top: 21px;
+}
 .-top-28 {
     top: -28px;
 }
@@ -730,7 +735,10 @@ a {
 .-mt-102 {
     margin-top: -102px;
 }
-
+/* gy */
+.gy-5rem{
+    --bs-gutter-y: 5rem;
+}
 /* line clump */
 .line-clump-1 {
     display: -webkit-box;
@@ -947,12 +955,14 @@ a {
 
 /* border */
 .border-main {
-    border: 1px solid #008BF9;
+    border: 1px solid #008BF9 !important;
 }
 .border-main2{
     border: 1px solid #A7D6EF26;
 }
-
+.border-main3 {
+    border: 1px solid #1babc3 !important;
+}
 .border-secondary {
     border-color: #6c757d00 !important;
 }
@@ -1049,7 +1059,6 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 .w-84 {
     width: 84px;
 }
-
 .w-104 {
     width: 104px;
 }
@@ -1070,6 +1079,9 @@ border-image-source: linear-gradient(180deg, rgba(127, 208, 252, 0.276) 0%, rgba
 }
 .w-147 {
     width: 147px;
+}
+.w-150 {
+    width: 150px;
 }
 .w-180 {
     width: 180px;
@@ -1218,7 +1230,19 @@ select:focus-visible {
     background-color: #1BABC3;
     border: transparent;
 }
-
+.tabs li button{
+    background-color: transparent;
+    transition: all .4s;
+}
+.tabs li button.active,.tabs li button:hover{
+    background-color: #1BABC3;
+}
+.tabContent > div{
+    display: none;
+}
+.tabContent > div.active{
+    display: flex;
+}
 /* hover */
 .hostCard:hover{
     background: linear-gradient(160.02deg, rgba(136, 231, 247, 0.13) 26.31%, rgba(112, 236, 255, 0.05) 75.07%);

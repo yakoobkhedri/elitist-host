@@ -164,3 +164,25 @@ $('.counter').counterUp({
   delay: 10,
   time: 1400
 });
+
+// tabs
+
+
+let tabs = Array.from(document.querySelectorAll('.tabs button'));
+let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
+
+tabs.forEach((item) => {
+  item.addEventListener('click', function() {
+    tabs.forEach((items) => {items.classList.remove('active')});
+      item.classList.add('active');
+      let tabId = item.dataset.id;
+      tabContent.forEach((content) => {
+          let contentId = content.dataset.id;
+          if (tabId === contentId) {
+              content.classList.add('active');
+          } else {
+            content.classList.remove('active');
+          }
+      })
+  })
+})
