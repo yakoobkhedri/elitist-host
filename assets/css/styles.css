@@ -272,7 +272,8 @@ header > div > div:first-child{
 
 #header2 ul li:hover > svg,
 #header2 ul li.active > svg,
-#header2 #openDropdown:hover > div > svg {
+#header2 #openDropdown:hover > div > svg,
+#header2 #openDropdown.active > div > svg {
     bottom: -1px;
     opacity: 100%;
     visibility: visible;
